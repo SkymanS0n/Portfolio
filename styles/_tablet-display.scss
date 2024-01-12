@@ -1,0 +1,642 @@
+@media screen and (min-width:451px) and (max-width:800px) {
+
+    .container {
+        width: 100%;
+        @include align;
+
+        /* Start of header */
+
+        header {
+            background-color: $hdr-ftr-bg;
+            box-shadow: 0px 2px 4px rgba(87, 87, 87, 0.4);
+            padding: 0.75em 0 0.75em 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+    
+            .nav-section {
+                align-items: center;
+                color: $font-color1;
+                display: flex;
+                margin: auto;
+                width: 90%;
+    
+                #logo {
+                    z-index: 2;
+                    @include alignCenterRow;
+                  
+                    img {
+                        max-width: 33px;
+                        height: auto;
+                        min-width: 33px;
+                        transition: transform 0.3s ease;
+                    }
+                }
+    
+                #menu-toggle {
+                    display: none;
+                }
+                
+                .hamburger {
+                    display: none;
+                }
+    
+                .slide-menu {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 2rem;
+                    width: 100%;
+    
+                    .nav-bar-links {
+                        @include alignCenterRow;
+    
+                        li {
+
+                            a {
+                                padding: 0.5em 0em 0.5em 0.5em;
+                                margin-left: 1em;
+                                color: $font-color1;
+                                transition: color 0.3s ease;
+                            }
+                        }
+    
+                        .menu-send-message {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+            
+        
+        /* End of Header Section */
+    
+        /* Start of Hero Section */
+    
+
+        .hero-section {
+            background: linear-gradient(to right, #42464B,  #16181a);
+            padding-bottom: 5em;
+    
+            .hero-container {
+                color: $font-color1;
+                margin: auto;
+                padding-top: 7em;
+                width: 90%;
+                @include alignCenter;
+    
+                .hero-details {
+                    width: 100%;
+                    @include align;
+    
+                    p, h2 {
+                        margin-bottom: 0.5em;
+    
+                            &:is(h2) {
+                            width: 100%;
+                        }
+                    }
+                    
+                    h1 {
+                        font-size: 4rem;
+                        font-weight: 600;
+                        margin-bottom: 0.3em;
+                    }
+    
+                    .buttons {
+                        display: none;
+                    }
+                }
+    
+                .hero-img {
+                    margin: 1em 0em 2em;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+            #buttons2 {
+                margin: 2em 0em 1em;
+                @include alignCenterRow;
+                width: 100%;
+    
+                .view-work {
+                    @each $property, $value in $btn {
+                        #{$property}: $value;
+                    transition: background-color 0.3s ease;
+                    }
+                }
+                .about-me {
+                    display: none;
+                }
+            }
+        }
+    
+
+        /* End of Hero Section */
+    
+        /* Start of Project Section */
+    
+    
+        $carouselWidth: 100%;
+        
+        #projects.projects-section {
+            background-color: #eaeaea;
+            padding: 5em 0em;
+            @include alignCenter;
+        
+            h4 {
+            margin-bottom: 2em;
+            }
+        
+            .featured-projects {
+            overflow: hidden;
+            width: 100%;
+        
+                .carousel {
+                    display: flex;
+                    width: $carouselWidth;
+                    scroll-behavior: smooth;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
+                    scroll-snap-type: x mandatory;
+                    scrollbar-width: none;
+                    &::-webkit-scrollbar {
+                    display: none;
+                    }
+            
+                    .project-a,
+                    .project-b,
+                    .project-c {
+                    flex: 0 0 $carouselWidth;
+                    scroll-snap-align: start;
+                    padding: 1em 0em;
+                    @include alignCenter;
+                    min-width: 90%;
+            
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                            margin-bottom: 1em;
+                        }
+                
+                        p {
+                            display: none;
+                        }
+                
+                        .buttons-a,
+                        .buttons-b,
+                        .buttons-c {
+                            display: none;
+                        }
+                        
+                        .doc-options {
+                            display: none;
+
+                            a {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+        
+                .indicators {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 3em;
+            
+                    .indicator {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: gray;
+                        margin: 0 5px;
+                
+                        &.active {
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+
+            h4:nth-of-type(2) {
+                display: none;
+            }
+
+            .personal-projects {
+                display: none;
+            }
+
+            h4:last-of-type {
+                display: none;
+            }
+        }
+        
+        
+        /* End of Project Section */
+    
+        /* Start of About Section */
+    
+    
+        #aboutmyself.aboutmyself {
+            background-color: #303030;
+            color: #efefef;
+            padding: 5em 0em;
+            background: linear-gradient(to bottom, #42464B,  #16181a);
+            @include alignCenter;
+    
+            h3 {
+                margin-bottom: 2em;
+            }
+    
+            .about-me-container {
+                @include alignCenter;
+                width: 90%;
+
+                .image-container {
+                    margin-bottom: 2.5em;
+                }
+    
+                .about-me-details {
+                    @include alignCenter;
+
+                    .short-version {
+    
+                        .about {
+                            @include alignCenterRow;
+
+                            p {
+                                @include aboutpara;
+                                margin-bottom: 1.5em;
+                                width: 100%;
+                            }
+                        }
+                    }
+    
+                    .other-versions {
+
+                        .somewhat-long {
+                            @include alignCenterRow;
+
+                            p {
+                                @include aboutpara;
+                                width: 100%;
+
+                                span {
+                                    word-break: break-all;
+                                }
+                            }
+                    
+                            .read-more {
+                                color: #FBBF00;
+                                font-weight: 600;
+                            }
+                    
+                            img {
+                                display: none;
+                            }
+                        }
+                    }
+    
+                    /* Start of Skills Section */
+    
+                    .skills {
+                    width: 100%;
+                    padding: 0em 0em 5em;
+                    @include alignCenter;
+    
+                        p {
+                            margin-bottom: 3em;
+                            font-size: 2.5rem;
+                        }
+    
+                        .tech-skills-a {
+                            @include alignCenter;
+
+                            .group-a, .group-b {
+                                @include alignCenterRow;
+
+                                img {
+                                    @include myMixin;
+                                    padding: 0.5em;
+                                }
+                            }
+                        }
+    
+                        .tech-skills-b {
+                            @include alignCenter;
+                            
+                            .group-c, .group-d {
+                                @include alignCenterRow;
+
+                                img {
+                                    @include myMixin;
+                                    padding: 0.5em;
+                                }
+                            }
+                        }
+                    }
+                    /* End of Skills Section */
+                    .downloadable-version {
+    
+                        .cv-icon {
+                            @include alignCenterRow;
+    
+                            a {
+                                margin-right: 0.5em;
+                                color: #FBBF00;
+                                font-weight: 600;
+                                transition: color 0.3s ease;
+                            }
+    
+                            img {
+                                max-width: 3.5%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    
+        /* End of About Section */
+    
+        /* Start of Contact Section */
+            
+            
+        #contact.contact {
+            background-color: $font-color1;
+            align-self: center;
+            padding: 5em 0em 0em 0em;
+    
+            h3 {
+                margin-bottom: 0.5em;
+            }
+    
+            h4 {
+                width: 90%;
+                margin: auto;
+                padding-bottom: 4em;
+            }
+            
+            .contact-container {
+                @include alignCenter;
+                width: 100%;
+                color: $font-color1;
+
+                .contact-form {
+                    width: 100%;
+                    padding: 5em 2em 2.5em 2em;
+                    background-color: #000000;
+
+                    h3 {
+                        margin-bottom: 0.5em;
+                        @include alignCenterRow;
+                    }
+                    
+                    h4 {
+                        width: 100%;
+                        padding-bottom: 3em;
+                    }
+    
+                    form {
+                        @include align;
+                        width: 80%;
+                        margin: auto;
+    
+                        textarea, input {
+                            background-color: #3d3d3d;
+                            border: 2px solid $font-color1;
+                            border-radius: 0.3em;
+                        }
+    
+                        label {
+                            padding: 1em 0em 0.5em;
+                            text-align: left;
+                        }
+    
+                        button {
+                            @each $property, $value in $btn {
+                                #{$property}: $value;
+                            }
+                            margin-top: 2em;
+                            transition: background-color 0.3s ease;
+                        }
+                    }
+                }
+    
+                .contact-me {
+                    width: 100%;
+                    background-color: #000000;
+                    padding: 2.5em 4em 5em;
+    
+                    h3:first-of-type {
+                        display: none;
+                    }
+    
+                    h4:first-of-type {
+                        display: none;
+                    }
+
+                    h3:last-of-type {
+                        margin-bottom: 0.5em;
+                        font-weight: 600;
+                        @include alignCenterRow;
+                    }
+    
+                    h4:last-of-type {
+                        margin: auto;
+                        padding-bottom: 3em;
+                    }
+    
+                    .contact-links {
+                        @include alignCenter;
+                        padding: 0em 3em;
+    
+                        .business-phone {
+                            @include myContact1(padding 1em 1em);
+
+                            .phone-icon {
+                                @include alignCenterRow;
+                                @include contactIcons;
+        
+                                img {
+                                    @include contactLinksImg;
+                                }
+                            }
+        
+                            .phone-number-details {
+                                @include alignCenterRow;
+                            }
+                        }
+
+                        .business-email {
+                            @include myContact1(padding 1em 1em);
+        
+                            .email-icon {
+                                @include alignCenter;
+                                @include contactIcons;
+        
+                                img {
+                                    @include alignCenter;
+                                    @include contactLinksImg;
+                                }
+                            }
+
+                            @media screen and (max-width:480px) {
+                                .my-email {
+                                    word-break: break-all;
+                                }
+                            }
+                        }
+        
+                        .address2 {
+                            @include myContact1(padding 1.5em 1em);
+        
+                            .address-icon {
+                                @include alignCenter;
+                                @include contactIcons;
+        
+                                img {
+                                    @include contactLinksImg;
+                                }
+                            }
+                        }
+                        
+                        .social-links2 {
+                            @include myContact1(padding 1.5em 1em);
+                            margin-bottom: 0em;
+
+                            .chat-icon {
+                                @include alignCenter;
+                                @include contactIcons;
+        
+                                img {
+                                    @include contactLinksImg;
+                                }
+                            }
+        
+                            .social-icon {
+                                display: flex;
+                                align-items: center;
+                                
+                                a:first-of-type, a:last-of-type {
+                                    @include alignCenter;
+        
+                                    img {
+                                        width: 60%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        /* End of Contact Section */
+
+        /* Start of Dropdown portion */
+    
+
+        .dev-process {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            overflow: hidden;
+            height: 2em;
+            transition: height 0.3s ease;
+        
+            .icon {
+                width: fit-content;
+                @include alignCenter;
+                position: absolute;
+                transition: scale 0.1s ease;
+                margin: auto;
+        
+                img {
+                    width: 60%;
+                    height: auto;
+                    padding: 0.3em 0em;
+                    text-align: center;
+                    transform: rotate(0deg);
+                    transition: transform 0.3s ease;
+                
+                    &:focus {
+                        outline: solid 2px blue;
+                    }
+                }
+            }
+        
+            &.open {
+                height: auto;
+                transition: height 0.3s ease;
+        
+                .icon img {
+                    transform: rotate(180deg);
+                    transition-delay: 0.1s;
+                }
+            }
+        
+            p {
+                width: 100%;
+                padding: 3em 5% 2em;
+                background-color: #000000;
+                color: $font-color1;
+            }
+        }
+        
+        
+        /* End of Dropdown portion */
+    
+        /* Start of Footer */
+    
+    
+        footer {
+            background-color: #16181a;
+            color: $font-color1;
+            padding: 0em 1.5em;
+    
+            .footer-container {
+                padding: 2em 0em;
+                @include alignCenter;
+                font-size: 1.7rem;
+    
+                .sitemap {
+                    display: none;
+                }
+    
+                address, .legal-regulations {
+                    margin-bottom: 2em;
+    
+                    strong {
+                        color: #FBBF00;
+                        font-weight: 600;
+                    }
+    
+                    #zip {
+                        color: #efefef;
+                        font-weight: 300;
+                    }
+                }
+    
+                .social-links {
+                    display: none;
+                }
+    
+                .hire {
+                    display: flex;
+                    color: #FBBF00;
+                    font-weight: 600;
+                }
+            }
+        }/* End of Footer */
+    }
+}
+
+
+    
+
