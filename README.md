@@ -1,4 +1,4 @@
-# Project Name: portfolio-jerico-eijansantos
+# Project Name: Portfolio
 
 **Introduction:**
 
