@@ -32,7 +32,7 @@
                         <ul class = "nav-bar-links">
                             <li><a href="#projects" class="menu-link">Projects</a></li>
                             <li><a href="#aboutmyself" class="menu-link">About</a></li>
-                            <li><a href="#contact" class="menu-link">Contact</a></li>
+                            <li><a href="#contactlink" class="menu-link">Contact</a></li>
                             <button class="menu-send-message" onclick="location. href='mailto:jerico@developer.com?subject=Inquiry'">Send a message
                             </button>
                         </ul>
@@ -206,7 +206,7 @@
                 <section id = "contact" class="contact"> <!-- Start of Contact Section -->
                     <h3>Are you looking for a developer?</h3>
                     <h4>I'm currently available for work.</h4>
-                    <div class="contact-container">
+                    <div id= "contactlink" class="contact-container">
                         <div class="contact-form">
                             <h3>Lightning option?</h3>
                             <h4>Hit me up and I'll get back to you asap.</h4>

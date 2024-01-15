@@ -2262,7 +2262,7 @@ h4 {
   /* Start of Hero Section */
   .hero-section {
     height: 100vh;
-    background: linear-gradient(to right, #0073ff, #16181a);
+    background: linear-gradient(to right, #ff00e1, #16181a);
     padding-bottom: 0em;
     display: flex;
     align-items: center;
