@@ -19,7 +19,7 @@
         <div class="container">
             <header> <!-- Start of header -->
                 <div class="nav-section">
-                    <a id = "logo" href="index.html">
+                    <a id = "logo" href="index.php">
                         <img src="images/my-logo.png" alt="Jerico Eijansantos logo">
                     </a>
                     <input type="checkbox" id = "menu-toggle">
