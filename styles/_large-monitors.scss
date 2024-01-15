@@ -86,7 +86,10 @@
         .hero-section {
             height: 100vh;
             background: linear-gradient(to right, #0072fd,  #16181a);
-            padding-bottom: 4em;
+            padding-bottom: 0em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
             .hero-container {
                 color: $font-color1;
@@ -94,7 +97,7 @@
                 flex-direction: row;
                 font-size: $mobile-font;
                 margin: auto;
-                padding-top: 6em;
+                padding-top: 0em;
                 width: 70%;
     
                 .hero-details {
@@ -173,6 +176,10 @@
             padding: 5em 0em 3em;
             @include align;
             align-items: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           
             h4 {
                 margin-bottom: 4em;

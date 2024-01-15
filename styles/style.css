@@ -2263,7 +2263,10 @@ h4 {
   .hero-section {
     height: 100vh;
     background: linear-gradient(to right, #0073ff, #16181a);
-    padding-bottom: 4em;
+    padding-bottom: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .hero-section .hero-container {
     color: #efefef;
@@ -2271,7 +2274,7 @@ h4 {
     flex-direction: row;
     font-size: 2rem;
     margin: auto;
-    padding-top: 6em;
+    padding-top: 0em;
     width: 80%;
   }
   .hero-section .hero-container .hero-details {
@@ -2379,6 +2382,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
   }
   #projects.projects-section h4 {
     margin-bottom: 4em;
@@ -3224,7 +3228,10 @@ h4 {
   .hero-section {
     height: 100vh;
     background: linear-gradient(to right, #0072fd, #16181a);
-    padding-bottom: 4em;
+    padding-bottom: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .hero-section .hero-container {
     color: #efefef;
@@ -3232,7 +3239,7 @@ h4 {
     flex-direction: row;
     font-size: 2rem;
     margin: auto;
-    padding-top: 6em;
+    padding-top: 0em;
     width: 70%;
   }
   .hero-section .hero-container .hero-details {
@@ -3340,6 +3347,10 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #projects.projects-section h4 {
     margin-bottom: 4em;
