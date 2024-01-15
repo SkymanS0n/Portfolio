@@ -1,5 +1,4 @@
 {
-    "require": {
-        "phpmailer/phpmailer": "^6.8"
-    }
+    "name": "prinb/2024-portfolio",
+    "require": {}
 }
