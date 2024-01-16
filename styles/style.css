@@ -144,6 +144,8 @@ h4 {
     width: 10.5em;
     font-size: 2rem;
     width: 10.5em;
+    margin-right: 1.5em;
+    width: 10.5em;
   }
   .container .hero-section {
     height: 100vh;
@@ -204,6 +206,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
+    margin-right: 1.5em;
   }
   .container .hero-section #buttons2 .view-work:is(.about-me), .container .hero-section #buttons2 .about-me:is(.about-me) {
     display: none;
@@ -474,6 +477,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
+    margin-right: 1.5em;
     margin-top: 2em;
   }
   .container #contact.contact .contact-container .contact-me {
@@ -863,6 +867,8 @@ h4 {
     transition: background-color 0.3s ease;
     font-size: 2rem;
     transition: background-color 0.3s ease;
+    margin-right: 1.5em;
+    transition: background-color 0.3s ease;
   }
   .container .hero-section #buttons2 .about-me {
     display: none;
@@ -1149,6 +1155,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
+    margin-right: 1.5em;
     margin-top: 2em;
     transition: background-color 0.3s ease;
   }
@@ -1537,6 +1544,12 @@ h4 {
     height: 54px;
     font-size: 2rem;
     height: 54px;
+    margin-right: 1.5em;
+    height: 54px;
+  }
+  .container .hero-section .hero-container .hero-details .buttons button:hover {
+    cursor: pointer;
+    background-color: #ffaa00;
   }
   .container .hero-section .hero-container .hero-details .buttons button:hover {
     cursor: pointer;
@@ -1884,6 +1897,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
+    margin-right: 1.5em;
     margin-top: 2em;
     transition: background-color 0.3s ease;
   }
@@ -2323,6 +2337,11 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
+    margin-right: 1.5em;
+  }
+  .hero-section .hero-container .hero-details .buttons button:hover {
+    cursor: pointer;
+    background-color: #ffaa00;
   }
   .hero-section .hero-container .hero-details .buttons button:hover {
     cursor: pointer;
@@ -2870,6 +2889,11 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
+    margin-right: 1.5em;
+  }
+  #contact.contact .contact-container .contact-me .send-message:hover {
+    cursor: pointer;
+    background-color: #ffaa00;
   }
   #contact.contact .contact-container .contact-me .send-message:hover {
     cursor: pointer;
@@ -3294,6 +3318,11 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
+    margin-right: 1.5em;
+  }
+  .hero-section .hero-container .hero-details .buttons button:hover {
+    cursor: pointer;
+    background-color: #ffaa00;
   }
   .hero-section .hero-container .hero-details .buttons button:hover {
     cursor: pointer;
@@ -3844,6 +3873,11 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
+    margin-right: 1.5em;
+  }
+  #contact.contact .contact-container .contact-me .send-message:hover {
+    cursor: pointer;
+    background-color: #ffaa00;
   }
   #contact.contact .contact-container .contact-me .send-message:hover {
     cursor: pointer;
