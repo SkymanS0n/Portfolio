@@ -110,6 +110,14 @@
                         line-height: 1.7em;
                         margin-bottom: 0.5em;
                         text-align: left;
+
+                        &:nth-child(2) {
+                            font-style: italic;
+                        }
+
+                        & + h2 {
+                            margin-top: 2em;
+                        }
                     }
     
                     h1 {
@@ -628,7 +636,7 @@
                             }
                         }
                         
-                        p {
+                        a {
                             display: flex;
                             justify-content: center;
                             align-items: center;

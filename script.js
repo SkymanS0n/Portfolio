@@ -25,29 +25,7 @@ carousel.addEventListener('scroll', () => {
   });
 });
 
-var footer = document.querySelector("footer");
-var footerHeight = footer.offsetHeight;
-var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-window.addEventListener("scroll", function() {
-  var newScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  var windowHeight = window.innerHeight;
-  var documentHeight = document.documentElement.scrollHeight;
-
-  if (newScrollPosition > scrollPosition) {
-    if (newScrollPosition + windowHeight >= documentHeight) {
-      footer.classList.remove("footer-fixed");
-    }
-  } else {
-    if (newScrollPosition === 0) {
-      footer.classList.remove("footer-fixed");
-    } else if (newScrollPosition + windowHeight < documentHeight) {
-      footer.classList.add("footer-fixed");
-    }
-  }
-
-  scrollPosition = newScrollPosition;
-});
 
 const devProcess = document.querySelector('.dev-process');
 

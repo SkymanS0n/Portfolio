@@ -176,6 +176,9 @@ h4 {
     font-weight: 600;
     margin-bottom: 0.3em;
   }
+  .container .hero-section .hero-container .hero-details h1 span {
+    word-break: break-all;
+  }
   .container .hero-section .hero-container .hero-details .buttons {
     display: none;
   }
@@ -2289,6 +2292,12 @@ h4 {
     margin-bottom: 0.5em;
     text-align: left;
   }
+  .hero-section .hero-container .hero-details p:nth-child(2), .hero-section .hero-container .hero-details h2:nth-child(2) {
+    font-style: italic;
+  }
+  .hero-section .hero-container .hero-details p + h2, .hero-section .hero-container .hero-details h2 + h2 {
+    margin-top: 2em;
+  }
   .hero-section .hero-container .hero-details h1 {
     font-size: 5rem;
     font-weight: 600;
@@ -2918,14 +2927,14 @@ h4 {
     max-width: 80%;
     height: auto;
   }
-  #contact.contact .contact-container .contact-me .business-email p, #contact.contact .contact-container .contact-me .business-phone p {
+  #contact.contact .contact-container .contact-me .business-email a, #contact.contact .contact-container .contact-me .business-phone a {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 100;
     transition: margin-left 0.3s ease;
   }
-  #contact.contact .contact-container .contact-me .business-email p:hover, #contact.contact .contact-container .contact-me .business-phone p:hover {
+  #contact.contact .contact-container .contact-me .business-email a:hover, #contact.contact .contact-container .contact-me .business-phone a:hover {
     cursor: pointer;
     margin-left: 1em;
   }
@@ -3227,7 +3236,7 @@ h4 {
   /* Start of Hero Section */
   .hero-section {
     height: 100vh;
-    background: linear-gradient(to right, #0072fd, #16181a);
+    background: linear-gradient(to right, #42464B, #16181a);
     padding-bottom: 0em;
     display: flex;
     align-items: center;
@@ -3254,10 +3263,16 @@ h4 {
     margin-bottom: 0.5em;
     text-align: left;
   }
+  .hero-section .hero-container .hero-details p:nth-child(2), .hero-section .hero-container .hero-details h2:nth-child(2) {
+    font-style: italic;
+  }
+  .hero-section .hero-container .hero-details p + h2, .hero-section .hero-container .hero-details h2 + h2 {
+    margin-top: 2em;
+  }
   .hero-section .hero-container .hero-details h1 {
     font-size: 5rem;
     font-weight: 600;
-    margin-bottom: 0.3em;
+    margin-bottom: 0em;
     text-align: left;
   }
   .hero-section .hero-container .hero-details .buttons {
@@ -3886,14 +3901,14 @@ h4 {
     max-width: 80%;
     height: auto;
   }
-  #contact.contact .contact-container .contact-me .business-email p, #contact.contact .contact-container .contact-me .business-phone p {
+  #contact.contact .contact-container .contact-me .business-email a, #contact.contact .contact-container .contact-me .business-phone a {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 100;
     transition: margin-left 0.3s ease;
   }
-  #contact.contact .contact-container .contact-me .business-email p:hover, #contact.contact .contact-container .contact-me .business-phone p:hover {
+  #contact.contact .contact-container .contact-me .business-email a:hover, #contact.contact .contact-container .contact-me .business-phone a:hover {
     cursor: pointer;
     margin-left: 1em;
   }

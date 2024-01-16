@@ -43,9 +43,10 @@
                 <section class="hero-section"> <!-- Start of Hero-Section -->
                     <div class="hero-container">
                         <div class="hero-details">
-                            <p>Hello there! I'm <span>Jerico</span>&#x1F44B;</p>
-                            <h1>Full stack web <span>developer</span></h1>
-                            <h2>I create end-to-end web solutions by handling both front-end and back-end development, ensuring seamless functionality and a user-friendly experience.</h2>
+                            <!--<p>Hello there! I'm <span>Jerico</span>&#x1F44B;</p>-->
+                            <h1>Versatile Web <span>Professional:</span></h1>
+                            <p>Crafting, Testing, and Assuring Excellence.</p>
+                            <h2>Web developer with a passion for software testing, adept in both automated and manual testing to ensure robust and high-quality solutions.</h2>
                             <div class="buttons">
                                 <button class="view-work" onclick="location.href= '#projects' ">
                                     View my work
@@ -285,7 +286,7 @@
                     </address>
                     <div class="legal-regulations">
                         <a href=""><strong>Terms & Conditions</strong></a>
-                        <p>© 2024-2025 Jerico Eijansantos</p>
+                        <p>© 2024 Jerico Eijansantos | All rights reserved</p>
                     </div>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/jerico-eijansantos/"><img src="images/linkedin-tile.svg" alt="View Jerico Eijansantos' LinkedIn profile - White LinkedIn logo"></a>

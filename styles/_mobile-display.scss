@@ -134,6 +134,10 @@
                         font-size: 4rem;
                         font-weight: 600;
                         margin-bottom: 0.3em;
+
+                        span {
+                            word-break: break-all;
+                        }
                     }
     
                     .buttons {
