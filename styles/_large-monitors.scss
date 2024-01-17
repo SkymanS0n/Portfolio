@@ -197,6 +197,10 @@
                 position: relative;
                 overflow: hidden;
                 width: 80%;
+
+                @media screen and (min-width: 1441px) and (max-width: 1550px) {
+                    width: 100%;
+                }
           
                 .carousel {
                     display: flex;
@@ -212,6 +216,10 @@
                         transition: background-color 0.3s ease;
                         position: relative;
                         width: 100%;
+
+                        &.project-b {
+                            margin: 0em 1em;
+                        }
                             
                         &:hover {
                             background-color: #d2d2d23d;

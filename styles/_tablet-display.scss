@@ -97,6 +97,14 @@
                             &:is(h2) {
                             width: 100%;
                         }
+
+                        &:nth-child(2) {
+                            font-style: italic;
+                        }
+
+                        & + h2 {
+                            margin-top: 2em;
+                        }
                     }
                     
                     h1 {

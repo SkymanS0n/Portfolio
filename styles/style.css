@@ -838,6 +838,12 @@ h4 {
   .container .hero-section .hero-container .hero-details p:is(h2), .container .hero-section .hero-container .hero-details h2:is(h2) {
     width: 100%;
   }
+  .container .hero-section .hero-container .hero-details p:nth-child(2), .container .hero-section .hero-container .hero-details h2:nth-child(2) {
+    font-style: italic;
+  }
+  .container .hero-section .hero-container .hero-details p + h2, .container .hero-section .hero-container .hero-details h2 + h2 {
+    margin-top: 2em;
+  }
   .container .hero-section .hero-container .hero-details h1 {
     font-size: 4rem;
     font-weight: 600;
@@ -2454,8 +2460,12 @@ h4 {
     align-items: center;
     transition: background-color 0.3s ease;
     position: relative;
-    border-radius: 15px;
     width: 100%;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a.project-b,
+  #projects.projects-section .featured-projects .carousel .project-b.project-b,
+  #projects.projects-section .featured-projects .carousel .project-c.project-b {
+    margin: 0em 1em;
   }
   #projects.projects-section .featured-projects .carousel .project-a:hover,
   #projects.projects-section .featured-projects .carousel .project-b:hover,
@@ -2651,7 +2661,6 @@ h4 {
     transition: background-color 0.3s ease;
     color: #efefef;
     z-index: 2;
-    border-top-right-radius: 25px;
     font-size: 1.6rem;
   }
 }
@@ -2667,9 +2676,7 @@ h4 {
   #projects.projects-section .featured-projects .carousel .project-b .doc-options a:hover,
   #projects.projects-section .featured-projects .carousel .project-c .doc-options a:hover {
     cursor: pointer;
-    font-weight: 600;
-    background-color: #fbc000;
-    color: #000000;
+    color: #fbc000;
   }
   #projects.projects-section h4:nth-of-type(2) {
     padding: 4em 0.5em 0em 0.5em;
@@ -3422,6 +3429,20 @@ h4 {
     overflow: hidden;
     width: 80%;
   }
+  /* End of Project Section */
+  /* Start of About Section */
+  /* End of About Section */
+  /* Start of Contact Section */
+  /* End of Contact Section */
+  /* Start of Footer */
+  /* End of Footer */
+}
+@media screen and (min-width: 1441px) and (min-width: 1441px) and (max-width: 1550px) {
+  #projects.projects-section .featured-projects {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1441px) {
   #projects.projects-section .featured-projects .carousel {
     display: flex;
     justify-content: space-between;
@@ -3439,6 +3460,11 @@ h4 {
     transition: background-color 0.3s ease;
     position: relative;
     width: 100%;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a.project-b,
+  #projects.projects-section .featured-projects .carousel .project-b.project-b,
+  #projects.projects-section .featured-projects .carousel .project-c.project-b {
+    margin: 0em 1em;
   }
   #projects.projects-section .featured-projects .carousel .project-a:hover,
   #projects.projects-section .featured-projects .carousel .project-b:hover,
@@ -3505,13 +3531,6 @@ h4 {
     padding: 0.5em;
     width: 50%;
   }
-  /* End of Project Section */
-  /* Start of About Section */
-  /* End of About Section */
-  /* Start of Contact Section */
-  /* End of Contact Section */
-  /* Start of Footer */
-  /* End of Footer */
 }
 @media screen and (min-width: 1441px) and (min-width: 1285px) {
   #projects.projects-section .featured-projects .carousel .project-a .buttons-a .source-code,
