@@ -1522,6 +1522,12 @@ h4 {
     margin-bottom: 0.1em;
     text-align: left;
   }
+  .container .hero-section .hero-container .hero-details p:nth-child(2), .container .hero-section .hero-container .hero-details h2:nth-child(2) {
+    font-style: italic;
+  }
+  .container .hero-section .hero-container .hero-details p + h2, .container .hero-section .hero-container .hero-details h2 + h2 {
+    margin-top: 2em;
+  }
   .container .hero-section .hero-container .hero-details h1 {
     font-size: 4rem;
     font-weight: 600;
