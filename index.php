@@ -88,7 +88,7 @@
                                     </button>
                                 </div>
                                 <div class="doc-options">
-                                    <a href="#">Source Code</a>
+                                    <a href="https://github.com/SkymanS0n/Portfolio.git" target="_blank">Source Code</a>
                                     <a href="#">Design Documentation</a>
                                     <a href="#">System Documentation</a>
                                 </div>

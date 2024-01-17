@@ -103,6 +103,21 @@ document.querySelector('.address2').addEventListener('click', function() {
   }
 });
 
+// Set focus outline when using the tab key.
+document.body.addEventListener('mousedown', function() {
+  document.body.classList.add('using-mouse');
+  document.body.classList.remove('show-focus-outline');
+});
+
+document.body.addEventListener('keydown', function(event) {
+  if (event.key === 'Tab') {
+    document.body.classList.remove('using-mouse');
+    document.body.classList.add('show-focus-outline');
+  }
+});
+
+
+
 
 
 

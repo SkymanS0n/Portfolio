@@ -211,7 +211,6 @@
                         @include alignCenter;
                         transition: background-color 0.3s ease;
                         position: relative;
-                        border-radius: 15px;
                         width: 100%;
                             
                         &:hover {
@@ -307,7 +306,7 @@
                             z-index: 2;
                             transition: opacity 0.3s ease;
                             width: 50%;
-                            border-top-left-radius: 15px;
+                            border-top-right-radius: 15px;
                         
                             a {
                                 display: flex;
@@ -319,7 +318,6 @@
                                 transition: background-color 0.3s ease;
                                 color: $font-color1;
                                 z-index: 2;
-                                border-top-right-radius: 25px;
                                 font-size: 1.6rem;
 
                                 @media screen and (min-width:1285px) {
@@ -328,9 +326,7 @@
                     
                                 &:hover {
                                     cursor: pointer;
-                                    font-weight: 600;
-                                    background-color: #fbc000;
-                                    color: #000000;
+                                    color: #fbc000;
                                 }
                             }
                         }  

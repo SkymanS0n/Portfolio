@@ -1,3 +1,7 @@
+*:focus {
+    outline: none;
+}
+
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
@@ -9,6 +13,14 @@ body {
     font-weight: 100;
 }
 
+body.show-focus-outline a:focus,
+body.show-focus-outline button:focus,
+body.show-focus-outline input:focus,
+body.show-focus-outline select:focus,
+body.show-focus-outline textarea:focus {
+  outline: 2px solid blue;
+}
+
 h3 {
     @include mobileFontH3;
     font-weight: 600;
@@ -17,4 +29,8 @@ h3 {
 h4 {
     font-size: $mobile-font-h4;
 }
+
+
+
+
 

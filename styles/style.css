@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*:focus {
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
@@ -8,6 +12,14 @@ body {
   font-size: 2rem;
   text-align: center;
   font-weight: 100;
+}
+
+body.show-focus-outline a:focus,
+body.show-focus-outline button:focus,
+body.show-focus-outline input:focus,
+body.show-focus-outline select:focus,
+body.show-focus-outline textarea:focus {
+  outline: 2px solid blue;
 }
 
 h3 {
@@ -3420,7 +3432,6 @@ h4 {
     align-items: center;
     transition: background-color 0.3s ease;
     position: relative;
-    border-radius: 15px;
     width: 100%;
   }
   #projects.projects-section .featured-projects .carousel .project-a:hover,
@@ -3603,7 +3614,7 @@ h4 {
     z-index: 2;
     transition: opacity 0.3s ease;
     width: 50%;
-    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
   #projects.projects-section .featured-projects .carousel .project-a .doc-options a,
   #projects.projects-section .featured-projects .carousel .project-b .doc-options a,
@@ -3617,7 +3628,6 @@ h4 {
     transition: background-color 0.3s ease;
     color: #efefef;
     z-index: 2;
-    border-top-right-radius: 25px;
     font-size: 1.6rem;
   }
 }
@@ -3633,9 +3643,7 @@ h4 {
   #projects.projects-section .featured-projects .carousel .project-b .doc-options a:hover,
   #projects.projects-section .featured-projects .carousel .project-c .doc-options a:hover {
     cursor: pointer;
-    font-weight: 600;
-    background-color: #fbc000;
-    color: #000000;
+    color: #fbc000;
   }
   #projects.projects-section h4:nth-of-type(2) {
     padding: 4em 0.5em 0em 0.5em;
