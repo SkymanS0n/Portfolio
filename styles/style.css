@@ -816,6 +816,9 @@ h4 {
     height: 100vh;
     background: linear-gradient(to right, #42464B, #16181a);
     padding-bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .container .hero-section .hero-container {
     color: #efefef;
