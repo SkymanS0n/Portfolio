@@ -1507,14 +1507,19 @@ h4 {
   .container .hero-section {
     height: 100vh;
     background: linear-gradient(to right, #42464B, #16181a);
-    padding-bottom: 5em;
+    padding-bottom: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .container .hero-section .hero-container {
     color: #efefef;
     display: flex;
     align-items: center;
+    display: flex;
+    flex-direction: row;
     margin: auto;
-    padding-top: 7em;
+    padding-top: 0em;
     width: 80%;
   }
   .container .hero-section .hero-container .hero-details {
@@ -2647,7 +2652,6 @@ h4 {
     z-index: 2;
     transition: opacity 0.3s ease;
     width: 50%;
-    border-top-left-radius: 15px;
   }
   #projects.projects-section .featured-projects .carousel .project-a .doc-options a,
   #projects.projects-section .featured-projects .carousel .project-b .doc-options a,
