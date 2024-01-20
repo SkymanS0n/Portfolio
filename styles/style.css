@@ -156,7 +156,7 @@ h4 {
     width: 10.5em;
     font-size: 2rem;
     width: 10.5em;
-    margin-right: 1.5em;
+    margin-right: 0em;
     width: 10.5em;
   }
   .container .hero-section {
@@ -218,7 +218,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
-    margin-right: 1.5em;
+    margin-right: 0em;
   }
   .container .hero-section #buttons2 .view-work:is(.about-me), .container .hero-section #buttons2 .about-me:is(.about-me) {
     display: none;
@@ -489,7 +489,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
-    margin-right: 1.5em;
+    margin-right: 0em;
     margin-top: 2em;
   }
   .container #contact.contact .contact-container .contact-me {
@@ -738,7 +738,7 @@ h4 {
     font-weight: 600;
   }
 }
-@media screen and (min-width: 451px) and (max-width: 800px) {
+@media screen and (min-width: 451px) and (max-width: 800px) and (orientation: portrait) {
   .container {
     width: 100%;
     display: flex;
@@ -815,15 +815,16 @@ h4 {
   .container .hero-section {
     height: 100vh;
     background: linear-gradient(to right, #42464B, #16181a);
-    padding-bottom: 5em;
+    padding: 0em;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   .container .hero-section .hero-container {
     color: #efefef;
     margin: auto;
-    padding-top: 7em;
+    padding-top: 0em;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -845,23 +846,28 @@ h4 {
     font-style: italic;
   }
   .container .hero-section .hero-container .hero-details p + h2, .container .hero-section .hero-container .hero-details h2 + h2 {
-    margin-top: 2em;
+    width: 80%;
+    margin: 2em 10%;
   }
   .container .hero-section .hero-container .hero-details h1 {
     font-size: 4rem;
     font-weight: 600;
-    margin-bottom: 0.3em;
+    margin: 1em 0em 0.3em;
   }
   .container .hero-section .hero-container .hero-details .buttons {
     display: none;
   }
   .container .hero-section .hero-container .hero-img {
-    margin: 1em 0em 2em;
+    margin: 1em 0em 0em;
+    width: 70%;
+    height: auto;
+  }
+  .container .hero-section .hero-container .hero-img .img {
     width: 100%;
     height: auto;
   }
   .container .hero-section #buttons2 {
-    margin: 2em 0em 1em;
+    margin: 2em 0em 4em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -888,15 +894,16 @@ h4 {
     transition: background-color 0.3s ease;
     font-size: 2rem;
     transition: background-color 0.3s ease;
-    margin-right: 1.5em;
+    margin-right: 0em;
     transition: background-color 0.3s ease;
   }
   .container .hero-section #buttons2 .about-me {
     display: none;
   }
   .container #projects.projects-section {
+    height: 100vh;
     background-color: #eaeaea;
-    padding: 5em 0em;
+    padding: 0em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -908,6 +915,7 @@ h4 {
   .container #projects.projects-section .featured-projects {
     overflow: hidden;
     width: 100%;
+    margin-bottom: 8em;
   }
   .container #projects.projects-section .featured-projects .carousel {
     display: flex;
@@ -926,12 +934,13 @@ h4 {
   .container #projects.projects-section .featured-projects .carousel .project-c {
     flex: 0 0 100%;
     scroll-snap-align: start;
-    padding: 1em 0em;
+    padding: 0em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-width: 90%;
+    margin-top: 2em;
   }
   .container #projects.projects-section .featured-projects .carousel .project-a img,
   .container #projects.projects-section .featured-projects .carousel .project-b img,
@@ -1176,7 +1185,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
-    margin-right: 1.5em;
+    margin-right: 0em;
     margin-top: 2em;
     transition: background-color 0.3s ease;
   }
@@ -1272,12 +1281,12 @@ h4 {
     min-width: 40px;
   }
 }
-@media screen and (min-width: 451px) and (max-width: 800px) and (max-width: 480px) {
+@media screen and (min-width: 451px) and (max-width: 800px) and (orientation: portrait) and (max-width: 480px) {
   .container #contact.contact .contact-container .contact-me .contact-links .business-email .my-email {
     word-break: break-all;
   }
 }
-@media screen and (min-width: 451px) and (max-width: 800px) {
+@media screen and (min-width: 451px) and (max-width: 800px) and (orientation: portrait) {
   .container #contact.contact .contact-container .contact-me .contact-links .address2 {
     display: flex;
     align-items: center;
@@ -1510,31 +1519,32 @@ h4 {
   .container .hero-section {
     height: 100vh;
     background: linear-gradient(to right, #42464B, #16181a);
-    padding-bottom: 0em;
+    padding: 0em;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   .container .hero-section .hero-container {
     color: #efefef;
-    display: flex;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
     margin: auto;
     padding-top: 0em;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .container .hero-section .hero-container .hero-details {
     width: 100%;
-    justify-content: center;
     display: flex;
     flex-direction: column;
   }
   .container .hero-section .hero-container .hero-details p, .container .hero-section .hero-container .hero-details h2 {
-    line-height: 1.7em;
-    margin-bottom: 0.1em;
-    text-align: left;
+    margin-bottom: 0.5em;
+  }
+  .container .hero-section .hero-container .hero-details p:is(h2), .container .hero-section .hero-container .hero-details h2:is(h2) {
+    width: 100%;
   }
   .container .hero-section .hero-container .hero-details p:nth-child(2), .container .hero-section .hero-container .hero-details h2:nth-child(2) {
     font-style: italic;
@@ -1545,103 +1555,52 @@ h4 {
   .container .hero-section .hero-container .hero-details h1 {
     font-size: 4rem;
     font-weight: 600;
-    margin-bottom: 0em;
-    text-align: left;
+    margin: 2em 0em 0.3em;
   }
   .container .hero-section .hero-container .hero-details .buttons {
-    margin-top: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button {
-    width: 10em;
-    align-self: center;
-    height: 54px;
-    background-color: #FBBF00;
-    height: 54px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    height: 54px;
-    color: #000000;
-    height: 54px;
-    font-weight: 600;
-    height: 54px;
-    padding: 0.6em 1em;
-    height: 54px;
-    transition: background-color 0.3s ease;
-    height: 54px;
-    width: 10em;
-    height: 54px;
-    border-radius: 2em;
-    height: 54px;
-    font-size: 2rem;
-    height: 54px;
-    margin-right: 1.5em;
-    height: 54px;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:hover {
-    cursor: pointer;
-    background-color: #ffaa00;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:is(.about-me) {
-    background-color: transparent;
-    color: #FBBF00;
-    box-shadow: none;
-  }
-  .container .hero-section .hero-container .hero-details .buttons button:is(.about-me):hover {
-    color: #eaeaea;
+    display: none;
   }
   .container .hero-section .hero-container .hero-img {
-    margin: 2em 0em 4em;
-    max-width: 100%;
+    margin: 1em 0em 0em;
+    width: 100%;
     height: auto;
-    min-width: 250px;
   }
   .container .hero-section #buttons2 {
+    margin: 2em 0em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container .hero-section #buttons2 .view-work {
+    align-self: center;
+    transition: background-color 0.3s ease;
+    background-color: #FBBF00;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+    color: #000000;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    padding: 0.6em 1em;
+    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    width: 10em;
+    transition: background-color 0.3s ease;
+    border-radius: 2em;
+    transition: background-color 0.3s ease;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+    margin-right: 0em;
+    transition: background-color 0.3s ease;
+  }
+  .container .hero-section #buttons2 .about-me {
     display: none;
   }
   .container #projects.projects-section {
-    background-color: #efefef;
+    background-color: #eaeaea;
     padding: 5em 0em;
     display: flex;
     flex-direction: column;
@@ -1649,57 +1608,42 @@ h4 {
     align-items: center;
   }
   .container #projects.projects-section h4 {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
   .container #projects.projects-section .featured-projects {
+    overflow: hidden;
     width: 100%;
   }
   .container #projects.projects-section .featured-projects .carousel {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .container #projects.projects-section .featured-projects .carousel::-webkit-scrollbar {
+    display: none;
   }
   .container #projects.projects-section .featured-projects .carousel .project-a,
   .container #projects.projects-section .featured-projects .carousel .project-b,
   .container #projects.projects-section .featured-projects .carousel .project-c {
-    border-radius: 5px;
-    padding: 0em;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 1em 0em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease;
-  }
-  .container #projects.projects-section .featured-projects .carousel .project-a:hover,
-  .container #projects.projects-section .featured-projects .carousel .project-b:hover,
-  .container #projects.projects-section .featured-projects .carousel .project-c:hover {
-    background-color: #ebebeb;
-  }
-  .container #projects.projects-section .featured-projects .carousel .project-a:hover .buttons-a,
-  .container #projects.projects-section .featured-projects .carousel .project-a:hover .buttons-b,
-  .container #projects.projects-section .featured-projects .carousel .project-a:hover .buttons-c,
-  .container #projects.projects-section .featured-projects .carousel .project-b:hover .buttons-a,
-  .container #projects.projects-section .featured-projects .carousel .project-b:hover .buttons-b,
-  .container #projects.projects-section .featured-projects .carousel .project-b:hover .buttons-c,
-  .container #projects.projects-section .featured-projects .carousel .project-c:hover .buttons-a,
-  .container #projects.projects-section .featured-projects .carousel .project-c:hover .buttons-b,
-  .container #projects.projects-section .featured-projects .carousel .project-c:hover .buttons-c {
-    opacity: 1;
-  }
-  .container #projects.projects-section .featured-projects .carousel .project-a:hover img,
-  .container #projects.projects-section .featured-projects .carousel .project-b:hover img,
-  .container #projects.projects-section .featured-projects .carousel .project-c:hover img {
-    transform: scale(1.1);
-    cursor: pointer;
+    min-width: 90%;
   }
   .container #projects.projects-section .featured-projects .carousel .project-a img,
   .container #projects.projects-section .featured-projects .carousel .project-b img,
   .container #projects.projects-section .featured-projects .carousel .project-c img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 1em;
-    transition: transform 0.3s ease;
   }
   .container #projects.projects-section .featured-projects .carousel .project-a p,
   .container #projects.projects-section .featured-projects .carousel .project-b p,
@@ -1721,6 +1665,26 @@ h4 {
   .container #projects.projects-section .featured-projects .carousel .project-b .doc-options,
   .container #projects.projects-section .featured-projects .carousel .project-c .doc-options {
     display: none;
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a .doc-options a,
+  .container #projects.projects-section .featured-projects .carousel .project-b .doc-options a,
+  .container #projects.projects-section .featured-projects .carousel .project-c .doc-options a {
+    display: none;
+  }
+  .container #projects.projects-section .featured-projects .indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+  }
+  .container #projects.projects-section .featured-projects .indicators .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+  }
+  .container #projects.projects-section .featured-projects .indicators .indicator.active {
+    background-color: black;
   }
   .container #projects.projects-section h4:nth-of-type(2) {
     display: none;
@@ -1929,7 +1893,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
-    margin-right: 1.5em;
+    margin-right: 0em;
     margin-top: 2em;
     transition: background-color 0.3s ease;
   }
@@ -2369,7 +2333,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
-    margin-right: 1.5em;
+    margin-right: 0em;
   }
   .hero-section .hero-container .hero-details .buttons button:hover {
     cursor: pointer;
@@ -2718,6 +2682,109 @@ h4 {
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+}
+@media screen and (min-width: 1081px) and (max-width: 1440px) and (min-width: 1081px) and (max-width: 1440px) and (min-height: 601px) and (max-height: 800px) {
+  #projects.projects-section {
+    height: auto;
+    background-color: #eaeaea;
+    padding: 5em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #projects.projects-section h4 {
+    margin-bottom: 2em;
+  }
+  #projects.projects-section .featured-projects {
+    overflow: hidden;
+    width: 100%;
+    height: auto; /* Adjust the height as needed */
+  }
+  #projects.projects-section .featured-projects .carousel {
+    display: flex;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  #projects.projects-section .featured-projects .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a,
+  #projects.projects-section .featured-projects .carousel .project-b,
+  #projects.projects-section .featured-projects .carousel .project-c {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 1em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 90%;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a img,
+  #projects.projects-section .featured-projects .carousel .project-b img,
+  #projects.projects-section .featured-projects .carousel .project-c img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0em;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a p,
+  #projects.projects-section .featured-projects .carousel .project-b p,
+  #projects.projects-section .featured-projects .carousel .project-c p {
+    display: none;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a .buttons-a,
+  #projects.projects-section .featured-projects .carousel .project-a .buttons-b,
+  #projects.projects-section .featured-projects .carousel .project-a .buttons-c,
+  #projects.projects-section .featured-projects .carousel .project-b .buttons-a,
+  #projects.projects-section .featured-projects .carousel .project-b .buttons-b,
+  #projects.projects-section .featured-projects .carousel .project-b .buttons-c,
+  #projects.projects-section .featured-projects .carousel .project-c .buttons-a,
+  #projects.projects-section .featured-projects .carousel .project-c .buttons-b,
+  #projects.projects-section .featured-projects .carousel .project-c .buttons-c {
+    display: none;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a .doc-options,
+  #projects.projects-section .featured-projects .carousel .project-b .doc-options,
+  #projects.projects-section .featured-projects .carousel .project-c .doc-options {
+    display: none;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a .doc-options a,
+  #projects.projects-section .featured-projects .carousel .project-b .doc-options a,
+  #projects.projects-section .featured-projects .carousel .project-c .doc-options a {
+    display: none;
+  }
+  #projects.projects-section .featured-projects .indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    height: 10px; /* Set a specific height for indicators */
+  }
+  #projects.projects-section .featured-projects .indicators .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+  }
+  #projects.projects-section .featured-projects .indicators .indicator.active {
+    background-color: black;
+  }
+  #projects.projects-section h4:nth-of-type(2) {
+    display: none;
+  }
+  #projects.projects-section .personal-projects {
+    display: none;
+  }
+  #projects.projects-section h4:last-of-type {
+    display: none;
+  }
+}
+@media screen and (min-width: 1081px) and (max-width: 1440px) {
   #aboutmyself.aboutmyself {
     display: flex;
     flex-direction: column;
@@ -2921,7 +2988,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
-    margin-right: 1.5em;
+    margin-right: 0em;
   }
   #contact.contact .contact-container .contact-me .send-message:hover {
     cursor: pointer;
@@ -3350,7 +3417,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
-    margin-right: 1.5em;
+    margin-right: 0em;
   }
   .hero-section .hero-container .hero-details .buttons button:hover {
     cursor: pointer;
@@ -3913,7 +3980,7 @@ h4 {
     width: 10em;
     border-radius: 2em;
     font-size: 2rem;
-    margin-right: 1.5em;
+    margin-right: 0em;
   }
   #contact.contact .contact-container .contact-me .send-message:hover {
     cursor: pointer;

@@ -1,5 +1,5 @@
 
-@media screen and (min-width:1081px) and (max-width:1440px){
+@media screen and (min-width:1081px) and (max-width:1440px) {
 
     /* Start of header */
     
@@ -376,6 +376,106 @@
             }
         }
         
+        @media screen and (min-width: 1081px) and (max-width: 1440px) and (min-height: 601px) and (max-height: 800px) {
+            
+            $carouselWidth: 100%;
+        
+            #projects.projects-section {
+                height: auto;
+                background-color: #eaeaea;
+                padding: 5em 0em;
+                @include alignCenter;
+            
+                h4 {
+                margin-bottom: 2em;
+                }
+            
+                .featured-projects {
+                    overflow: hidden;
+                    width: 100%;
+                    height: auto; /* Adjust the height as needed */
+                
+                    .carousel {
+                        display: flex;
+                        width: $carouselWidth;
+                        scroll-behavior: smooth;
+                        overflow-x: auto;
+                        -webkit-overflow-scrolling: touch;
+                        scroll-snap-type: x mandatory;
+                        scrollbar-width: none;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                
+                        .project-a,
+                        .project-b,
+                        .project-c {
+                            flex: 0 0 $carouselWidth;
+                            scroll-snap-align: start;
+                            padding: 1em 0em;
+                            @include alignCenter;
+                            min-width: 90%;
+                            
+                            img {
+                                max-width: 100%;
+                                height: auto;
+                                margin-bottom: 0em;
+                            }
+                
+                            p {
+                                display: none;
+                            }
+                
+                            .buttons-a,
+                            .buttons-b,
+                            .buttons-c {
+                                display: none;
+                            }
+                
+                            .doc-options {
+                                display: none;
+                
+                                a {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                
+                    .indicators {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 1em;
+                        height: 10px; /* Set a specific height for indicators */
+                
+                        .indicator {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: gray;
+                            margin: 0 5px;
+                
+                            &.active {
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+                
+
+                h4:nth-of-type(2) {
+                    display: none;
+                }
+
+                .personal-projects {
+                    display: none;
+                }
+
+                h4:last-of-type {
+                    display: none;
+                }
+            }
+        }
         
         /* End of Project Section */
     
