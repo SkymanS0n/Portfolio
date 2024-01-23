@@ -163,11 +163,14 @@ h4 {
     height: 100vh;
     background: linear-gradient(to right, #42464B, #16181a);
     padding-bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .container .hero-section .hero-container {
     color: #efefef;
     margin: auto;
-    padding-top: 7em;
+    padding-top: 3em;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -184,21 +187,27 @@ h4 {
   }
   .container .hero-section .hero-container .hero-details p:is(h2), .container .hero-section .hero-container .hero-details h2:is(h2) {
     width: 100%;
+    margin-top: 1em;
+    font-size: 1.5rem;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+  }
+  .container .hero-section .hero-container .hero-details p:is(p), .container .hero-section .hero-container .hero-details h2:is(p) {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
   }
   .container .hero-section .hero-container .hero-details h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
-    margin-bottom: 0.3em;
-  }
-  .container .hero-section .hero-container .hero-details h1 span {
-    word-break: break-all;
+    margin-bottom: 0em;
   }
   .container .hero-section .hero-container .hero-details .buttons {
     display: none;
   }
   .container .hero-section .hero-container .hero-img {
     margin: 1em 0em 2em;
-    width: 100%;
+    width: 70%;
     height: auto;
   }
   .container .hero-section #buttons2 {
@@ -217,13 +226,14 @@ h4 {
     transition: background-color 0.3s ease;
     width: 10em;
     border-radius: 2em;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 0em;
   }
   .container .hero-section #buttons2 .view-work:is(.about-me), .container .hero-section #buttons2 .about-me:is(.about-me) {
     display: none;
   }
   .container #projects.projects-section {
+    height: 100vh;
     background-color: #eaeaea;
     padding: 5em 0em;
     display: flex;
@@ -231,8 +241,12 @@ h4 {
     justify-content: center;
     align-items: center;
   }
+  .container #projects.projects-section h3 {
+    font-size: 3rem;
+  }
   .container #projects.projects-section h4 {
     margin-bottom: 2em;
+    font-size: 1.5rem;
   }
   .container #projects.projects-section .featured-projects {
     overflow: hidden;
@@ -301,8 +315,8 @@ h4 {
     margin-top: 3em;
   }
   .container #projects.projects-section .featured-projects .indicators .indicator {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: gray;
     margin: 0 5px;
@@ -331,6 +345,8 @@ h4 {
   }
   .container #aboutmyself.aboutmyself h3 {
     margin-bottom: 2em;
+    font-size: 3rem;
+    font-weight: 300;
   }
   .container #aboutmyself.aboutmyself .about-me-container {
     display: flex;
@@ -360,6 +376,7 @@ h4 {
     margin-bottom: 5em;
     line-height: 1.5;
     margin-bottom: 1.5em;
+    font-size: 1.5rem;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .other-versions .somewhat-long {
     display: flex;
@@ -371,43 +388,62 @@ h4 {
     width: 90%;
     margin-bottom: 5em;
     line-height: 1.5;
+    font-size: 1.5rem;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .other-versions .somewhat-long p span {
     word-break: break-all;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .other-versions .somewhat-long .read-more {
     color: #FBBF00;
-    font-weight: 600;
+    font-weight: 300;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .other-versions .somewhat-long img {
     display: none;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills {
-    padding: 0em 0em 5em;
+    padding: 0em 2em 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills p {
-    margin-bottom: 3em;
-    font-size: 2.5rem;
+    margin-bottom: 2em;
+    font-size: 3rem;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-a {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-a .group-a, .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-a .group-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-a .group-a img, .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-a .group-b img {
     width: 100%;
     height: auto;
     padding: 1em;
+    padding: 0.5em;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-b {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-b .group-c, .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-b .group-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-b .group-c img, .container #aboutmyself.aboutmyself .about-me-container .about-me-details .skills .tech-skills-b .group-d img {
     width: 100%;
     height: auto;
     padding: 1em;
+    padding: 0.5em;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .downloadable-version .cv-icon {
     display: flex;
@@ -417,7 +453,8 @@ h4 {
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .downloadable-version .cv-icon a {
     margin-right: 0.5em;
     color: #FBBF00;
-    font-weight: 600;
+    font-weight: 300;
+    font-size: 1.5rem;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .downloadable-version .cv-icon img {
     max-width: 3.5%;
@@ -441,6 +478,7 @@ h4 {
     width: 90%;
     margin: auto;
     padding-bottom: 4em;
+    font-size: 1.5rem;
   }
   .container #contact.contact .contact-container {
     display: flex;
@@ -460,6 +498,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
   }
   .container #contact.contact .contact-container .contact-form h4 {
     width: 100%;
@@ -477,6 +516,7 @@ h4 {
   .container #contact.contact .contact-container .contact-form form label {
     padding: 1em 0em 0.5em;
     text-align: left;
+    font-size: 1.5rem;
   }
   .container #contact.contact .contact-container .contact-form form button {
     align-self: center;
@@ -488,9 +528,9 @@ h4 {
     transition: background-color 0.3s ease;
     width: 10em;
     border-radius: 2em;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 0em;
-    margin-top: 2em;
+    margin-top: 5em;
   }
   .container #contact.contact .contact-container .contact-me {
     width: 100%;
@@ -511,7 +551,7 @@ h4 {
   }
   .container #contact.contact .contact-container .contact-me h4:last-of-type {
     margin: auto;
-    padding-bottom: 3em;
+    padding-bottom: 8em;
   }
   .container #contact.contact .contact-container .contact-me .contact-links {
     display: flex;
@@ -519,6 +559,7 @@ h4 {
     justify-content: center;
     align-items: center;
     padding: 0em 3em;
+    font-size: 1.5rem;
   }
   .container #contact.contact .contact-container .contact-me .contact-links .business-phone {
     display: flex;
@@ -550,6 +591,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
   }
   .container #contact.contact .contact-container .contact-me .contact-links .business-email {
     display: flex;
@@ -589,6 +631,9 @@ h4 {
   }
 }
 @media screen and (max-width: 450px) {
+  .container #contact.contact .contact-container .contact-me .contact-links .business-email .my-email {
+    padding: 1em;
+  }
   .container #contact.contact .contact-container .contact-me .contact-links .address2 {
     display: flex;
     align-items: center;
@@ -615,6 +660,9 @@ h4 {
     max-width: 100%;
     height: auto;
     min-width: 40px;
+  }
+  .container #contact.contact .contact-container .contact-me .contact-links .address2 .local-address {
+    padding: 1em;
   }
   .container #contact.contact .contact-container .contact-me .contact-links .social-links2 {
     display: flex;
@@ -653,9 +701,10 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1em;
   }
   .container #contact.contact .contact-container .contact-me .contact-links .social-links2 .social-icon a:first-of-type img, .container #contact.contact .contact-container .contact-me .contact-links .social-links2 .social-icon a:last-of-type img {
-    width: 60%;
+    width: 50%;
     height: auto;
   }
   .container .dev-process {
@@ -665,6 +714,7 @@ h4 {
     overflow: hidden;
     height: 2em;
     transition: height 0.3s ease;
+    font-size: 1.5rem;
   }
   .container .dev-process .icon {
     width: -moz-fit-content;
@@ -678,15 +728,12 @@ h4 {
     margin: auto;
   }
   .container .dev-process .icon img {
-    width: 60%;
+    width: 50%;
     height: auto;
-    padding: 0.3em 0em;
+    padding: 0.2em 0em;
     text-align: center;
     transform: rotate(0deg);
     transition: transform 0.3s ease;
-  }
-  .container .dev-process .icon img:focus {
-    outline: solid 2px blue;
   }
   .container .dev-process.open {
     height: auto;
@@ -713,7 +760,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   .container footer .footer-container .sitemap {
     display: none;
@@ -728,6 +775,9 @@ h4 {
   .container footer .footer-container address #zip, .container footer .footer-container .legal-regulations #zip {
     color: #efefef;
     font-weight: 300;
+  }
+  .container footer .footer-container address span, .container footer .footer-container .legal-regulations span {
+    word-break: break-all;
   }
   .container footer .footer-container .social-links {
     display: none;
