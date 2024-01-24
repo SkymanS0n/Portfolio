@@ -116,6 +116,44 @@ document.body.addEventListener('keydown', function(event) {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll('section');
+
+  function scrollToSection(index) {
+      const targetSection = sections[index];
+      if (targetSection) {
+          targetSection.scrollIntoView({
+              behavior: 'smooth'
+          });
+      }
+  }
+
+  let currentSection = 0;
+
+  window.addEventListener('wheel', function (event) {
+      const deltaY = event.deltaY;
+      if (deltaY > 0) {
+          // Scrolling down
+          currentSection = Math.min(currentSection + 1, sections.length - 1);
+      } else {
+          // Scrolling up
+          currentSection = Math.max(currentSection - 1, 0);
+      }
+
+      scrollToSection(currentSection);
+  });
+});
+
+function toggleContent(sectionId) {
+  // Toggle the display property of the selected content section
+  var selectedSection = document.getElementById(sectionId);
+  if (selectedSection) {
+      var currentDisplay = window.getComputedStyle(selectedSection, null).getPropertyValue('display');
+      var newDisplay = currentDisplay === 'none' ? 'block' : 'none';
+      selectedSection.style.display = newDisplay;
+  }
+}
+
 
 
 
