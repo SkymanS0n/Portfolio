@@ -57,47 +57,107 @@
                 .hamburger {
                     align-self: center;
                     @include align;
-                    height: 20px;
+                    height: 15px;
                     justify-content: space-between;
-                    width: 28px;
+                    width: 23px;
                     z-index: 2;
     
                     span {
-                        background-color: #FBBF00;
+                        background-color: #efefef;
                         color: #efefef;
-                        height: 5px;
+                        height: 1.5px;
                         width: 100%;
                         border-radius: 0.5em;
                     }
                 }
     
                 .slide-menu {
-                    background-color: rgba(66, 70, 75, 1);
-                    height: calc(100vh - 50px);
                     position: fixed;
                     width: 100%;
                     z-index: -1;
+                    height: 100vh;
+                    background-color: rgb(221, 219, 219);
+
+                    .my-address {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        background-color: #909292;
+
+                        .my-avatar {
+                            padding: 1em 1em 1em 1em;
+                            display: flex;
+                            align-items: flex-start;
+                            width: 30%;
+
+                            img {
+                                padding-top: 0.4em;
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+
+                        .my-location {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 3.5em 0em;
+                            font-size: 1.2rem;
+                            align-items: flex-start;
+
+                            :first-child {
+                                font-size: 2rem;
+                            }
+                        }
+
+                    }
     
                     .nav-bar-links {
-                        @include alignCenter;
-                        padding-top: 5em;
+                        background-color: rgb(221, 219, 219);
+                        display: flex;
+                        flex-direction: column;
                         width: 100%;
-                        z-index: -1;
     
                         li {
-                            padding: 0.5em;
+                            padding: 1em;
+                            border-bottom: 1px solid whitesmoke;
+                            width: 100%;
 
                             a {
                                 width: 100%;
                                 font-size: 1.5rem;
+                                display: flex;
+                                align-items: flex-start;
+                                justify-items: flex-start;
+                                color: #16181a;
                             }
                         }
     
                         .menu-send-message {
-                            margin-top: 5em;
+                            margin: 5em 0em 5em;
                             @each $property, $value in $btn-mobile {
                                 #{$property}: $value;
                                 width: 10.5em;
+                            }
+                        }
+                    }
+
+                    .mobile-footer {
+                        padding: 2em 0em;
+                        @include alignCenter;
+                        font-size: 1.2rem;
+                        width: 100%;
+                        color: #16181a;
+                        margin-top: 12em;
+            
+                        .legal-regulations {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+
+                            a {
+                                width: 100%;
+                                padding: 0em 0em 0.5em;
                             }
                         }
                     }
@@ -765,7 +825,5 @@
                 }
             }
         }/* End of Footer */
-
-       
     }
 }

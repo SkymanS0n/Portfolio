@@ -102,43 +102,73 @@ h4 {
     align-self: center;
     display: flex;
     flex-direction: column;
-    height: 20px;
+    height: 15px;
     justify-content: space-between;
-    width: 28px;
+    width: 23px;
     z-index: 2;
   }
   .container header .nav-section .hamburger span {
-    background-color: #FBBF00;
+    background-color: #efefef;
     color: #efefef;
-    height: 5px;
+    height: 1.5px;
     width: 100%;
     border-radius: 0.5em;
   }
   .container header .nav-section .slide-menu {
-    background-color: rgb(66, 70, 75);
-    height: calc(100vh - 50px);
     position: fixed;
     width: 100%;
     z-index: -1;
+    height: 100vh;
+    background-color: rgb(221, 219, 219);
   }
-  .container header .nav-section .slide-menu .nav-bar-links {
+  .container header .nav-section .slide-menu .my-address {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #909292;
+  }
+  .container header .nav-section .slide-menu .my-address .my-avatar {
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    align-items: flex-start;
+    width: 30%;
+  }
+  .container header .nav-section .slide-menu .my-address .my-avatar img {
+    padding-top: 0.4em;
+    width: 100%;
+    height: auto;
+  }
+  .container header .nav-section .slide-menu .my-address .my-location {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5em;
+    margin: 3.5em 0em;
+    font-size: 1.2rem;
+    align-items: flex-start;
+  }
+  .container header .nav-section .slide-menu .my-address .my-location :first-child {
+    font-size: 2rem;
+  }
+  .container header .nav-section .slide-menu .nav-bar-links {
+    background-color: rgb(221, 219, 219);
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    z-index: -1;
   }
   .container header .nav-section .slide-menu .nav-bar-links li {
-    padding: 0.5em;
+    padding: 1em;
+    border-bottom: 1px solid whitesmoke;
+    width: 100%;
   }
   .container header .nav-section .slide-menu .nav-bar-links li a {
     width: 100%;
     font-size: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    color: #16181a;
   }
   .container header .nav-section .slide-menu .nav-bar-links .menu-send-message {
-    margin-top: 5em;
+    margin: 5em 0em 5em;
     align-self: center;
     width: 10.5em;
     background-color: #FBBF00;
@@ -161,6 +191,27 @@ h4 {
     width: 10.5em;
     margin-right: 0em;
     width: 10.5em;
+  }
+  .container header .nav-section .slide-menu .mobile-footer {
+    padding: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    color: #16181a;
+    margin-top: 12em;
+  }
+  .container header .nav-section .slide-menu .mobile-footer .legal-regulations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .container header .nav-section .slide-menu .mobile-footer .legal-regulations a {
+    width: 100%;
+    padding: 0em 0em 0.5em;
   }
   .container .hero-section {
     height: 100vh;
