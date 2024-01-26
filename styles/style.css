@@ -88,7 +88,7 @@ h4 {
     transition: 0.4s ease-in-out;
     z-index: -1;
   }
-  .container header .nav-section #menu-toggle:checked ~ .slide-menu a {
+  .container header .nav-section #menu-toggle:checked ~ .slide-menu .menu-link {
     animation: fadeIn 1.6s ease-in-out forwards;
   }
   .container header .nav-section #menu-toggle:not(:checked) ~ .slide-menu {
@@ -185,11 +185,13 @@ h4 {
     width: 10.5em;
     width: 10em;
     width: 10.5em;
-    border-radius: 2em;
+    border-radius: 0.5em;
     width: 10.5em;
     font-size: 1.5rem;
     width: 10.5em;
     margin-right: 0em;
+    width: 10.5em;
+    text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
     width: 10.5em;
   }
   .container header .nav-section .slide-menu .mobile-footer {
@@ -215,7 +217,7 @@ h4 {
   }
   .container .hero-section {
     height: 100vh;
-    background: linear-gradient(to right, #00eaff, #16181a);
+    background-color: rgb(221, 219, 219);
     padding-bottom: 5em;
     display: flex;
     align-items: center;
@@ -230,6 +232,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #16181a;
   }
   .container .hero-section .hero-container .hero-details {
     width: 100%;
@@ -305,9 +308,10 @@ h4 {
     padding: 0.6em 1em;
     transition: background-color 0.3s ease;
     width: 10em;
-    border-radius: 2em;
+    border-radius: 0.5em;
     font-size: 1.5rem;
     margin-right: 0em;
+    text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
     transform: translateY(0);
     opacity: 0;
     animation: bounceInPlace 1s ease-in-out 0.6s forwards;
@@ -633,9 +637,10 @@ h4 {
     padding: 0.6em 1em;
     transition: background-color 0.3s ease;
     width: 10em;
-    border-radius: 2em;
+    border-radius: 0.5em;
     font-size: 1.5rem;
     margin-right: 0em;
+    text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
     margin-top: 5em;
   }
   .container #contact.contact .contact-container .contact-me {
