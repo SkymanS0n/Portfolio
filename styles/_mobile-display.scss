@@ -8,12 +8,12 @@
 
         header {
             background-color: $hdr-ftr-bg;
-            box-shadow: 0px 2px 4px rgba(87, 87, 87, 0.4);
+            box-shadow: 0px 2px 4px rgb(87, 87, 87);
             padding: 0.75em 0em;
             position: fixed;
             top: 0;
             width: 100%;
-            z-index: 2;
+            z-index: 3;
     
             .nav-section {
                 color: #efefef;
@@ -21,34 +21,44 @@
                 justify-content: space-between;
                 margin: auto;
                 width: $mobile-width;
-                z-index: 2;
     
                 a {
                     @include alignCenter;
                     height: auto;
                     width: 28px;
-                    z-index: 2;
                 }
     
                 #menu-toggle {
                     display: none;
-                    z-index: 1;
+                    z-index: -1;
     
                     &:checked ~ .slide-menu {
-                        left: 0;
-                        top: 2.8em;
+                        left: -15%;
+                        top: 2.9em;
                         transition: 0.4s ease-in-out;
                         z-index: -1;
 
                         .menu-link {
-                            animation: fadeIn 1.6s ease-in-out forwards;
+                            animation: fadeInMenu 1.6s ease-in-out forwards;
+                        }
+                    }
+
+                    @keyframes fadeInMenu {
+                        from {
+                            opacity: 0;
+                            transform: translateX(-20px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateX(0);
                         }
                     }
     
                     &:not(:checked) ~ .slide-menu {
-                        background-color: transparent;
-                        left: 0;
-                        top: -100%;
+                        background-color: rgb(221, 219, 219);
+                        left: -100%;
+                        right: 0;
+                        top: 2.9em;
                         transition: 0.5s ease-in-out;
                         z-index: -1;
                     }
@@ -60,7 +70,7 @@
                     height: 15px;
                     justify-content: space-between;
                     width: 23px;
-                    z-index: 2;
+                    z-index: 3;
     
                     span {
                         background-color: #efefef;
@@ -74,15 +84,19 @@
                 .slide-menu {
                     position: fixed;
                     width: 100%;
-                    z-index: -1;
                     height: 100vh;
                     background-color: rgb(221, 219, 219);
+                    display: flex;
+                    flex-direction: column;
+                    z-index: -1;
+                    padding: 0em 0em 0em 15%;
 
                     .my-address {
                         display: flex;
                         flex-direction: row;
                         width: 100%;
                         background-color: #909292;
+                        z-index: -1;
 
                         .my-avatar {
                             padding: 1em 1em 1em 1em;
@@ -116,7 +130,7 @@
                         display: flex;
                         flex-direction: column;
                         width: 100%;
-                        
+                        z-index: -1;
     
                         li {
                             padding: 1em;
@@ -148,7 +162,8 @@
                         font-size: 1.2rem;
                         width: 100%;
                         color: #16181a;
-                        margin-top: 12em;
+                        margin-top: 5em;
+                        z-index: -1;
             
                         .legal-regulations {
                             display: flex;
@@ -174,7 +189,7 @@
 
         .hero-section {
             height: 100vh;
-            background-color: rgb(221, 219, 219);
+            background-color: rgb(255, 255, 255);
             padding-bottom: 5em;
             display: flex;
             align-items: center;
@@ -311,10 +326,10 @@
 
         #projects.projects-section {
             height: 100vh;
-            background-color: #eaeaea;
+            background-color: rgb(255, 255, 255);
             padding: 5em 0em;
             @include alignCenter;
-            display: none;
+            display: flex;
             height: calc(100vh - 56px);
 
             h3 {

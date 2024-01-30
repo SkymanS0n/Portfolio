@@ -144,15 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function toggleContent(sectionId) {
-  // Toggle the display property of the selected content section
-  var selectedSection = document.getElementById(sectionId);
-  if (selectedSection) {
-      var currentDisplay = window.getComputedStyle(selectedSection, null).getPropertyValue('display');
-      var newDisplay = currentDisplay === 'none' ? 'block' : 'none';
-      selectedSection.style.display = newDisplay;
-  }
-}
+
 
 
 
