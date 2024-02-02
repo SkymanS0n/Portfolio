@@ -27,6 +27,31 @@
                     height: auto;
                     width: 28px;
                 }
+
+                #logo {
+                    z-index: 2;
+                    @include alignCenterRow;
+                  
+                    img {
+                        max-width: 33px;
+                        height: auto;
+                        min-width: 33px;
+                        transform: rotate(90deg);
+                        animation: fadeInLogo 1.2s ease-in-out forwards;
+                        animation-delay: 1.5s;
+                    }
+                }
+
+                @keyframes fadeInLogo {
+                    from {
+                        opacity: 0;
+                        transform: rotate(90deg);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: rotate(0);
+                    }
+                }
     
                 #menu-toggle {
                     display: none;
@@ -99,10 +124,10 @@
                         z-index: -1;
 
                         .my-avatar {
-                            padding: 1em 1em 1em 1em;
+                            padding: 1em 0em 1em 0em;
                             display: flex;
                             align-items: flex-start;
-                            width: 30%;
+                            width: 25%;
 
                             img {
                                 padding-top: 0.4em;
@@ -114,7 +139,7 @@
                         .my-location {
                             display: flex;
                             flex-direction: column;
-                            margin: 3.5em 0em;
+                            margin: auto;
                             font-size: 1.2rem;
                             align-items: flex-start;
 
@@ -208,7 +233,7 @@
                     @include align;
     
                     p, h2 {
-                        margin-bottom: 0.5em;
+                        margin-bottom: 0em;
                         &:is(h2) {
                             width: 100%;
                             margin-top: 1em;
@@ -251,7 +276,7 @@
                     opacity: 0;
                     filter: blur(10px); /* Initial blur effect */
                     margin: 1.5em 0em 2em;
-                    width: 90%;
+                    width: 100%;
                     height: auto;
                     animation: fadeInAndBlurRemoval 0.8s ease-in-out 0.5s forwards;
                 }
@@ -592,7 +617,7 @@
                 .contact-form {
                     width: 100%;
                     padding: 5em 10% 2.5em 10%;
-                    background-color: #000000;
+                    background-color: $hdr-ftr-bg;
 
                     h3 {
                         margin-bottom: 0.5em;
@@ -612,6 +637,7 @@
                             background-color: #3d3d3d;
                             border: 2px solid $font-color1;
                             border-radius: 0.3em;
+                            text-align: left;
                         }
     
                         label {
@@ -619,19 +645,26 @@
                             text-align: left;
                             font-size: 1.5rem;
                         }
+
+                        ::placeholder {
+                            font-size: 1.5rem;
+                            text-align: left;
+                            padding-left: 0.5em;
+                        }
     
                         button {
                             @each $property, $value in $btn-mobile {
                                 #{$property}: $value;
                             }
                             margin-top: 5em;
+                            box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718),
                         }
                     }
                 }
     
                 .contact-me {
                     width: 100%;
-                    background-color: #000000;
+                    background-color: $hdr-ftr-bg;
                     padding: 2.5em 0% 2.5em;
     
                     h3:first-of-type {
@@ -663,6 +696,7 @@
                             .phone-icon {
                                 @include alignCenterRow;
                                 @include contactIcons;
+                                background-color: $hdr-ftr-bg;
         
                                 img {
                                     @include contactLinksImg;
@@ -681,6 +715,7 @@
                             .email-icon {
                                 @include alignCenter;
                                 @include contactIcons;
+                                background-color: $hdr-ftr-bg;
         
                                 img {
                                     @include alignCenter;
@@ -705,6 +740,7 @@
                             .address-icon {
                                 @include alignCenter;
                                 @include contactIcons;
+                                background-color: $hdr-ftr-bg;
         
                                 img {
                                     @include contactLinksImg;
@@ -785,7 +821,7 @@
             p {
                 width: 100%;
                 padding: 3em 5% 2em;
-                background-color: #000000;
+                background-color: $hdr-ftr-bg;
                 color: $font-color1;
                 bottom: -100%;
                 right: 0;
