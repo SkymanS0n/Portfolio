@@ -189,8 +189,7 @@
 
         .hero-section {
             height: 100vh;
-            background-color: rgb(255, 255, 255);
-            padding-bottom: 5em;
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(220, 220, 220), rgb(186, 186, 186), rgb(160, 160, 160));
             display: flex;
             align-items: center;
             justify-content: center;
@@ -199,6 +198,7 @@
             .hero-container {
                 color: $font-color1;
                 margin: auto;
+                margin-top: 0em;
                 padding-top: 5em;
                 width: $mobile-width;
                 @include alignCenter;
@@ -207,7 +207,6 @@
                 .hero-details {
                     width: 100%;
                     @include align;
-                    
     
                     p, h2 {
                         margin-bottom: 0.5em;
@@ -219,7 +218,6 @@
                         }
 
                         &:is(p) {
-                            font-style: italic;
                             font-size: 1.2rem;
                             margin-bottom: 1.5em;
                             animation: fadeIn 1.3s ease-in-out forwards;
@@ -253,8 +251,8 @@
                 .hero-img {
                     opacity: 0;
                     filter: blur(10px); /* Initial blur effect */
-                    margin: 1em 0em 2em;
-                    width: 70%;
+                    margin: 1.5em 0em 2em;
+                    width: 90%;
                     height: auto;
                     animation: fadeInAndBlurRemoval 0.8s ease-in-out 0.5s forwards;
                 }
@@ -275,7 +273,7 @@
                 @include align;
                 width: 100%;
                 margin: auto;
-                
+                display: none;
     
                 .view-work, .about-me {
                     // Apply mobile button styles
@@ -325,20 +323,19 @@
         $carouselWidth: 100%;
 
         #projects.projects-section {
-            height: 100vh;
-            background-color: rgb(255, 255, 255);
-            padding: 5em 0em;
-            @include alignCenter;
+            background-color: rgb(160, 160, 160);
             display: flex;
-            height: calc(100vh - 56px);
+            flex-direction: column;
+            padding: 5em 0em;
+            color: #16181a;
 
             h3 {
-                font-size: 3rem;
+                font-size: 4.5rem;
             }
         
             h4 {
-            margin-bottom: 2em;
-            font-size: 1.5rem;
+                margin-bottom: 2em;
+                font-size: 1.2rem;
             }
         
             .featured-projects {
@@ -362,18 +359,23 @@
                     .project-c {
                     flex: 0 0 $carouselWidth;
                     scroll-snap-align: start;
-                    padding: 1em 0em;
+                    padding: 0em 0em;
                     @include alignCenter;
                     min-width: 90%;
+                    
             
                         img {
                             max-width: 100%;
                             height: auto;
                             margin-bottom: 1em;
+                            filter: blur(10px); /* Adjust the blur amount */
                         }
                 
                         p {
-                            display: none;
+                            display: flex;
+                            text-align: center;
+                            font-size: 1.5rem;
+                            width: 85%;
                         }
                 
                         .buttons-a,
@@ -405,7 +407,7 @@
                         margin: 0 5px;
                 
                         &.active {
-                            background-color: black;
+                            background-color: #16181a;
                         }
                     }
                 }
@@ -430,12 +432,10 @@
         /* Start of About Section */
     
         #aboutmyself.aboutmyself {
-            background-color: #303030;
             color: $font-color1;
             padding: 5em 0em;
-            background: linear-gradient(to bottom, #42464B,  #16181a);
+            background-color: $hdr-ftr-bg;
             @include alignCenter;
-            display: none;
     
             h3 {
                 margin-bottom: 2em;
@@ -448,6 +448,7 @@
 
                 .image-container {
                     margin-bottom: 2.5em;
+                    display: none
                 }
     
                 .about-me-details {
@@ -558,8 +559,7 @@
         #contact.contact {
             background-color: $font-color1;
             align-self: center;
-            padding: 5em 0em 0em 0em;
-            display: none;
+            padding: 3em 0em 0em 0em;
     
             h3 {
                 margin-bottom: 0.5em;
@@ -624,7 +624,7 @@
                 .contact-me {
                     width: 100%;
                     background-color: #000000;
-                    padding: 2.5em 0% 5em;
+                    padding: 2.5em 0% 2.5em;
     
                     h3:first-of-type {
                         display: none;
@@ -711,6 +711,7 @@
                         .social-links2 {
                             @include myContact1(padding 1.5em 1em);
                             margin-bottom: 0em;
+                            display: none;
 
                             .chat-icon {
                                 @include alignCenter;
@@ -755,7 +756,6 @@
             height: 2em;
             transition: height 0.3s ease;
             font-size: 1.5rem;
-            display: none;
         
             .icon {
                 width: fit-content;
