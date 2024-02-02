@@ -179,26 +179,26 @@
                                 width: 10.5em;
                             }
                         }
-                    }
 
-                    .mobile-footer {
-                        padding: 2em 0em;
-                        @include alignCenter;
-                        font-size: 1.2rem;
-                        width: 100%;
-                        color: #16181a;
-                        margin-top: 5em;
-                        z-index: -1;
-            
-                        .legal-regulations {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
+                        .mobile-footer {
+                            padding: 2em 0em;
+                            @include alignCenter;
+                            font-size: 1.2rem;
                             width: 100%;
-
-                            a {
+                            color: #16181a;
+                            z-index: -1;
+                            justify-content: flex-end;
+                
+                            .legal-regulations {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
                                 width: 100%;
-                                padding: 0em 0em 0.5em;
+    
+                                a {
+                                    width: 100%;
+                                    padding: 0em 0em 0.5em;
+                                }
                             }
                         }
                     }
