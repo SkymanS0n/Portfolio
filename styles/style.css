@@ -106,7 +106,7 @@ h4 {
   }
   .container header .nav-section #menu-toggle:checked ~ .slide-menu {
     left: -15%;
-    top: 2.9em;
+    top: 3.125em;
     transition: 0.4s ease-in-out;
     z-index: -1;
   }
@@ -127,7 +127,7 @@ h4 {
     background-color: rgb(221, 219, 219);
     left: -100%;
     right: 0;
-    top: 2.9em;
+    top: 3.125em;
     transition: 0.5s ease-in-out;
     z-index: -1;
   }
@@ -232,7 +232,7 @@ h4 {
     text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
     width: 10.5em;
   }
-  .container header .nav-section .slide-menu .mobile-footer {
+  .container header .nav-section .slide-menu .nav-bar-links .mobile-footer {
     padding: 2em 0em;
     display: flex;
     flex-direction: column;
@@ -241,16 +241,16 @@ h4 {
     font-size: 1.2rem;
     width: 100%;
     color: #16181a;
-    margin-top: 5em;
     z-index: -1;
+    justify-content: flex-end;
   }
-  .container header .nav-section .slide-menu .mobile-footer .legal-regulations {
+  .container header .nav-section .slide-menu .nav-bar-links .mobile-footer .legal-regulations {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .container header .nav-section .slide-menu .mobile-footer .legal-regulations a {
+  .container header .nav-section .slide-menu .nav-bar-links .mobile-footer .legal-regulations a {
     width: 100%;
     padding: 0em 0em 0.5em;
   }
