@@ -231,7 +231,6 @@ h4 {
     padding: 0em 0em 0.5em;
   }
   .container .hero-section {
-    height: 100vh;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(220, 220, 220), rgb(186, 186, 186), rgb(160, 160, 160));
     display: flex;
     align-items: center;
@@ -357,14 +356,15 @@ h4 {
     background-color: rgb(160, 160, 160);
     display: flex;
     flex-direction: column;
-    padding: 5em 0em;
+    padding: 0em 0em 5em;
     color: #16181a;
   }
   .container #projects.projects-section h3 {
     font-size: 4.5rem;
+    margin-top: 0.5em;
   }
   .container #projects.projects-section h4 {
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     font-size: 1.2rem;
   }
   .container #projects.projects-section .featured-projects {
@@ -395,6 +395,12 @@ h4 {
     align-items: center;
     min-width: 90%;
   }
+  .container #projects.projects-section .featured-projects .carousel .project-a a,
+  .container #projects.projects-section .featured-projects .carousel .project-b a,
+  .container #projects.projects-section .featured-projects .carousel .project-c a {
+    display: block; /* Make the link a block-level element to cover the entire image */
+    text-decoration: none; /* Remove default link underline */
+  }
   .container #projects.projects-section .featured-projects .carousel .project-a img,
   .container #projects.projects-section .featured-projects .carousel .project-b img,
   .container #projects.projects-section .featured-projects .carousel .project-c img {
@@ -410,6 +416,7 @@ h4 {
     text-align: center;
     font-size: 1.5rem;
     width: 85%;
+    justify-content: center;
   }
   .container #projects.projects-section .featured-projects .carousel .project-a .buttons-a,
   .container #projects.projects-section .featured-projects .carousel .project-a .buttons-b,
@@ -597,6 +604,9 @@ h4 {
   }
 }
 @media screen and (max-width: 450px) {
+  .container #contact.contact h3:first-of-type {
+    padding: 0em 0.5em;
+  }
   .container #contact.contact h4 {
     width: 90%;
     margin: auto;
@@ -836,10 +846,10 @@ h4 {
     display: flex;
     justify-content: center;
     width: 100%;
-    overflow: hidden;
     height: 2em;
     transition: height 0.3s ease;
     font-size: 1.5rem;
+    overflow: hidden;
   }
   .container .dev-process .icon {
     width: -moz-fit-content;
@@ -860,6 +870,15 @@ h4 {
     transform: rotate(0deg);
     transition: transform 0.3s ease;
   }
+  .container .dev-process p {
+    width: 100%;
+    padding: 3em 5% 2em;
+    background-color: #000000;
+    color: #efefef;
+    bottom: -100%;
+    right: 0;
+    z-index: -1;
+  }
   .container .dev-process.open {
     height: auto;
     transition: height 0.3s ease;
@@ -867,12 +886,6 @@ h4 {
   .container .dev-process.open .icon img {
     transform: rotate(180deg);
     transition-delay: 0.1s;
-  }
-  .container .dev-process p {
-    width: 100%;
-    padding: 3em 5% 2em;
-    background-color: #000000;
-    color: #efefef;
   }
   .container footer {
     background-color: #16181a;
