@@ -11,7 +11,7 @@ html {
 body {
   font-size: 2rem;
   text-align: center;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 body.show-focus-outline a:focus,
