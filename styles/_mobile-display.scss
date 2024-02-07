@@ -130,9 +130,9 @@
                             width: 25%;
 
                             img {
-                                padding-top: 0.4em;
                                 width: 100%;
                                 height: auto;
+                                padding-bottom: 0.5em;
                             }
                         }
 
@@ -429,6 +429,7 @@
                     display: flex;
                     justify-content: center;
                     margin-top: 3em;
+                    margin-bottom: 1em;
             
                     .indicator {
                         width: 7px;

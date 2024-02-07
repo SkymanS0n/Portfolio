@@ -171,9 +171,9 @@ h4 {
     width: 25%;
   }
   .container header .nav-section .slide-menu .my-address .my-avatar img {
-    padding-top: 0.4em;
     width: 100%;
     height: auto;
+    padding-bottom: 0.5em;
   }
   .container header .nav-section .slide-menu .my-address .my-location {
     display: flex;
@@ -468,6 +468,7 @@ h4 {
     display: flex;
     justify-content: center;
     margin-top: 3em;
+    margin-bottom: 1em;
   }
   .container #projects.projects-section .featured-projects .indicators .indicator {
     width: 7px;
