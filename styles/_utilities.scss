@@ -60,6 +60,11 @@ $btn-single: (
     flex-direction: column;
 }
 
+@mixin alignRow {
+    display: flex;
+    flex-direction: row;
+}
+
 @mixin alignCenter {
   display: flex;
   flex-direction: column;
