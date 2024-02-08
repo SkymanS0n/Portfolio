@@ -247,6 +247,7 @@ h4 {
   .container header .nav-section .slide-menu .nav-bar-links .mobile-footer .legal-regulations {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
@@ -257,8 +258,9 @@ h4 {
   .container .hero-section {
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(220, 220, 220), rgb(186, 186, 186), rgb(160, 160, 160));
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .container .hero-section .hero-container {
     color: #efefef;
@@ -330,51 +332,7 @@ h4 {
     }
   }
   .container .hero-section #buttons2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
     display: none;
-  }
-  .container .hero-section #buttons2 .view-work, .container .hero-section #buttons2 .about-me {
-    z-index: 0;
-    align-self: center;
-    background-color: #FBBF00;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    color: #000000;
-    font-weight: 600;
-    padding: 0.6em 1em;
-    transition: background-color 0.3s ease;
-    width: 10em;
-    border-radius: 0.5em;
-    font-size: 1.5rem;
-    margin-right: 0em;
-    text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
-    transform: translateY(0);
-    opacity: 0;
-    animation: bounceInPlace 1s ease-in-out 0.6s forwards;
-  }
-  .container .hero-section #buttons2 .view-work:is(.about-me), .container .hero-section #buttons2 .about-me:is(.about-me) {
-    display: none;
-  }
-  @keyframes bounceInPlace {
-    0% {
-      transform: translateY(0);
-      opacity: 0;
-    }
-    20% {
-      transform: translateY(-10px);
-    }
-    40% {
-      transform: translateY(0);
-      opacity: 0.8;
-    }
-    60% {
-      opacity: 1;
-    }
-    80%, 100% {
-      opacity: 1;
-    }
   }
   .container #projects.projects-section {
     background-color: rgb(160, 160, 160);
@@ -503,8 +461,7 @@ h4 {
     font-weight: 300;
   }
   .container #aboutmyself.aboutmyself h4 {
-    margin-top: 0.5em;
-    margin-bottom: 5em;
+    margin: 0.5em 0em 5em;
     font-size: 1.5rem;
   }
   .container #aboutmyself.aboutmyself .about-me-container {
@@ -514,7 +471,6 @@ h4 {
     align-items: center;
   }
   .container #aboutmyself.aboutmyself .about-me-container .image-container {
-    margin-bottom: 2.5em;
     display: none;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details {
@@ -933,43 +889,7 @@ h4 {
     transition-delay: 0.1s;
   }
   .container footer {
-    background-color: #16181a;
-    color: #efefef;
-    padding: 0em 1.5em;
     display: none;
-  }
-  .container footer .footer-container {
-    padding: 2em 0em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-  }
-  .container footer .footer-container .sitemap {
-    display: none;
-  }
-  .container footer .footer-container address, .container footer .footer-container .legal-regulations {
-    margin-bottom: 2em;
-  }
-  .container footer .footer-container address strong, .container footer .footer-container .legal-regulations strong {
-    color: #FBBF00;
-    font-weight: 600;
-  }
-  .container footer .footer-container address #zip, .container footer .footer-container .legal-regulations #zip {
-    color: #efefef;
-    font-weight: 300;
-  }
-  .container footer .footer-container address span, .container footer .footer-container .legal-regulations span {
-    word-break: break-all;
-  }
-  .container footer .footer-container .social-links {
-    display: none;
-  }
-  .container footer .footer-container .hire {
-    display: flex;
-    color: #FBBF00;
-    font-weight: 600;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 800px) and (orientation: portrait) {
