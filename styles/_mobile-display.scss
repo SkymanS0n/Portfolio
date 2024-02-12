@@ -226,6 +226,7 @@
     
                     p, h2 {
                         margin-bottom: 0em;
+                        
                         &:is(h2) {
                             width: 100%;
                             margin-top: 1em;
@@ -426,7 +427,7 @@
             }
 
             h4 {
-                margin: 0.5em 0em 5em;
+                margin: 0.5em 0em 2em;
                 font-size: 1.5rem;
             }
     
@@ -434,7 +435,9 @@
                 @include alignCenter;
 
                 .image-container {
-                    display: none
+                    display: flex;
+                    margin-bottom: 2em;
+                    width: 90%;
                 }
     
                 .about-me-details {
@@ -461,6 +464,7 @@
                             p {
                                 @include aboutpara;
                                 font-size: 1.5rem;
+                                margin-bottom: 0em;
 
                                 span {
                                     word-break: break-all;
@@ -477,45 +481,9 @@
                             }
                         }
                     }
-    
-                    /* Start of Skills Section */
-    
-                    .skills {
-                    padding: 0em 2em 5em;
-                    @include alignCenter;
-    
-                        p {
-                            margin-bottom: 2em;
-                            font-size: 3rem;
-                        }
-    
-                        .tech-skills-a {
-                            @include alignCenter;
-
-                            .group-a, .group-b {
-                                @include alignCenterRow;
-
-                                img {
-                                    @include myMixin;
-                                    padding: 0.5em;
-                                }
-                            }
-                        }
-    
-                        .tech-skills-b {
-                            @include alignCenter;
-                            
-                            .group-c, .group-d {
-                                @include alignCenterRow;
-                                img {
-                                    @include myMixin;
-                                    padding: 0.5em;
-                                }
-                            }
-                        }
-                    }
-                    /* End of Skills Section */
+                    
                     .downloadable-version {
+                        display: none;
     
                         .cv-icon {
                             @include alignCenterRow;
@@ -538,6 +506,50 @@
 
     
         /* End of About Section */
+
+        /* Start of Skills Section */
+    
+        .skills {
+            padding: 0em 2em 5em;
+            @include alignCenter;
+            background-color: $hdr-ftr-bg;
+            color: $font-color1;
+
+                p {
+                    margin-bottom: 2em;
+                    font-size: 3rem;
+                }
+
+                .tech-skills-a {
+                    @include alignCenter;
+
+                    .group-a, .group-b {
+                        @include alignCenterRow;
+
+                        img {
+                            @include myMixin;
+                            padding: 0.5em;
+                            width: 90%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .tech-skills-b {
+                    @include alignCenter;
+                    
+                    .group-c, .group-d {
+                        @include alignCenterRow;
+                        img {
+                            @include myMixin;
+                            padding: 0.5em;
+                            width: 90%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            /* End of Skills Section */
     
         /* Start of Contact Section */
             
@@ -709,33 +721,7 @@
                         }
                         
                         .social-links2 {
-                            @include myContact1(padding 1.5em 1em);
-                            margin-bottom: 0em;
                             display: none;
-
-                            .chat-icon {
-                                @include alignCenter;
-                                @include contactIcons;
-        
-                                img {
-                                    @include contactLinksImg;
-                                }
-                            }
-        
-                            .social-icon {
-                                display: flex;
-                                align-items: center;
-                                
-                                a:first-of-type, a:last-of-type {
-                                    @include alignCenter;
-                                    padding: 1em;
-        
-                                    img {
-                                        width: 50%;
-                                        height: auto;
-                                    }
-                                }
-                            }
                         }
                     }
                 }

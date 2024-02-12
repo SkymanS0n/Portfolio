@@ -58,6 +58,7 @@
                                 margin-left: 1em;
                                 color: $font-color1;
                                 transition: color 0.3s ease;
+                                font-size: 2rem;
                             }
                         }
     
@@ -65,6 +66,14 @@
                             display: none;
                         }
                     }
+
+                    .my-address {
+                        display: none;
+                    }
+                }
+
+                .mobile-footer {
+                    display:  none;
                 }
             }
         }
@@ -75,47 +84,57 @@
         /* Start of Hero Section */
 
         .hero-section {
-            height: 100vh;
-            background: linear-gradient(to right, #42464B,  #16181a);
-            padding: 0em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(220, 220, 220), rgb(186, 186, 186), rgb(160, 160, 160));
+            @include alignCenter;
             
     
             .hero-container {
                 color: $font-color1;
                 margin: auto;
-                padding-top: 0em;
-                width: 90%;
+                margin-top: 0em;
+                padding-top: 7em;
+                width: $mobile-width;
                 @include alignCenter;
+                color: #16181a;
     
                 .hero-details {
                     width: 100%;
                     @include align;
     
                     p, h2 {
-                        margin-bottom: 0.5em;
-    
-                            &:is(h2) {
+                        margin-bottom: 0em;
+                        &:is(h2) {
                             width: 100%;
+                            margin-top: 1em;
+                            font-size: 2rem;
+                            animation: fadeIn 1.6s ease-in-out forwards;
+                            text-align: justify;
                         }
 
-                        &:nth-child(2) {
-                            font-style: italic;
-                        }
-
-                        & + h2 {
-                            width: 80%;
-                            margin: 2em 10%;
+                        &:is(p) {
+                            font-size: 2rem;
+                            margin-bottom: 1.5em;
+                            animation: fadeIn 1.3s ease-in-out forwards;
                         }
                     }
                     
                     h1 {
-                        font-size: 4rem;
+                        font-size: 4.5rem;
                         font-weight: 600;
-                        margin: 1em 0em 0.3em;
+                        margin-bottom: 0em;
+                        opacity: 0;
+                        animation: fadeIn 1s ease-in-out forwards;
+                    }
+                    
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                            transform: translateY(10px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
                     }
     
                     .buttons {
@@ -124,31 +143,28 @@
                 }
     
                 .hero-img {
-                    margin: 1em 0em 0em;
+                    opacity: 0;
+                    filter: blur(10px); /* Initial blur effect */
+                    margin: 1.5em 0em 2em;
                     width: 70%;
                     height: auto;
-
-                    .img {
-                        width: 100%;
-                        height: auto;
+                    animation: fadeInAndBlurRemoval 0.8s ease-in-out 0.5s forwards;
+                }
+                
+                @keyframes fadeInAndBlurRemoval {
+                    from {
+                        opacity: 0;
+                        filter: blur(10px);
+                    }
+                    to {
+                        opacity: 1;
+                        filter: blur(0);
                     }
                 }
             }
     
             #buttons2 {
-                margin: 2em 0em 4em;
-                @include alignCenterRow;
-                width: 100%;
-    
-                .view-work {
-                    @each $property, $value in $btn {
-                        #{$property}: $value;
-                    transition: background-color 0.3s ease;
-                    }
-                }
-                .about-me {
-                    display: none;
-                }
+                display: none;
             }
         }
     
@@ -159,21 +175,27 @@
     
     
         $carouselWidth: 100%;
-        
+
         #projects.projects-section {
-            height: 100vh;
-            background-color: #eaeaea;
-            padding: 0em;
-            @include alignCenter;
+            background-color: rgb(160, 160, 160);
+            @include align;
+            padding: 0em 0em 5em;
+            color: #16181a;
+
+            h3 {
+                font-size: 3.5rem;
+                margin-top: 0.5em;
+            }
         
             h4 {
-            margin-bottom: 2em;
+                margin-top: 0.5em;
+                margin-bottom: 5em;
+                font-size: 2rem;
             }
         
             .featured-projects {
             overflow: hidden;
             width: 100%;
-            margin-bottom: 8em;
         
                 .carousel {
                     display: flex;
@@ -192,19 +214,29 @@
                     .project-c {
                     flex: 0 0 $carouselWidth;
                     scroll-snap-align: start;
-                    padding: 0em;
+                    padding: 0em 0em;
                     @include alignCenter;
                     min-width: 90%;
-                    margin-top: 2em;
+
+                        a {
+                            display: block; /* Make the link a block-level element to cover the entire image */
+                            text-decoration: none; /* Remove default link underline */
+                        }
             
                         img {
                             max-width: 100%;
                             height: auto;
                             margin-bottom: 1em;
+                            filter: blur(10px); /* Adjust the blur amount */
                         }
                 
                         p {
-                            display: none;
+                            display: flex;
+                            text-align: center;
+                            font-size: 2rem;
+                            width: 90%;
+                            justify-content: center;
+                            text-align: justify;
                         }
                 
                         .buttons-a,
@@ -227,16 +259,17 @@
                     display: flex;
                     justify-content: center;
                     margin-top: 3em;
+                    margin-bottom: 1em;
             
                     .indicator {
-                        width: 10px;
-                        height: 10px;
+                        width: 7px;
+                        height: 7px;
                         border-radius: 50%;
                         background-color: gray;
                         margin: 0 5px;
                 
                         &.active {
-                            background-color: black;
+                            background-color: #16181a;
                         }
                     }
                 }
@@ -262,36 +295,43 @@
     
     
         #aboutmyself.aboutmyself {
-            background-color: #303030;
-            color: #efefef;
+            color: $font-color1;
             padding: 5em 0em;
-            background: linear-gradient(to bottom, #42464B,  #16181a);
+            background-color: $hdr-ftr-bg;
             @include alignCenter;
     
             h3 {
-                margin-bottom: 2em;
+                font-size: 3rem;
+                font-weight: 300
+            }
+
+            h4 {
+                margin: 0.5em 0em 2em;
+                font-size: 2rem;
             }
     
             .about-me-container {
                 @include alignCenter;
-                width: 90%;
 
                 .image-container {
-                    margin-bottom: 2.5em;
+                    display: flex;
+                    margin-bottom: 2em;
+                    width: 90%;
                 }
     
                 .about-me-details {
                     @include alignCenter;
 
                     .short-version {
-    
+                        
                         .about {
-                            @include alignCenterRow;
+                            @include alignCenter;
 
                             p {
                                 @include aboutpara;
                                 margin-bottom: 1.5em;
-                                width: 100%;
+                                font-size: 2rem;
+                                text-align: justify;
                             }
                         }
                     }
@@ -299,11 +339,12 @@
                     .other-versions {
 
                         .somewhat-long {
-                            @include alignCenterRow;
+                            @include alignCenter;
 
                             p {
                                 @include aboutpara;
-                                width: 100%;
+                                font-size: 2rem;
+                                text-align: justify;
 
                                 span {
                                     word-break: break-all;
@@ -312,7 +353,7 @@
                     
                             .read-more {
                                 color: #FBBF00;
-                                font-weight: 600;
+                                font-weight: 300;
                             }
                     
                             img {
@@ -320,46 +361,7 @@
                             }
                         }
                     }
-    
-                    /* Start of Skills Section */
-    
-                    .skills {
-                    width: 100%;
-                    padding: 0em 0em 5em;
-                    @include alignCenter;
-    
-                        p {
-                            margin-bottom: 3em;
-                            font-size: 2.5rem;
-                        }
-    
-                        .tech-skills-a {
-                            @include alignCenter;
-
-                            .group-a, .group-b {
-                                @include alignCenterRow;
-
-                                img {
-                                    @include myMixin;
-                                    padding: 0.5em;
-                                }
-                            }
-                        }
-    
-                        .tech-skills-b {
-                            @include alignCenter;
-                            
-                            .group-c, .group-d {
-                                @include alignCenterRow;
-
-                                img {
-                                    @include myMixin;
-                                    padding: 0.5em;
-                                }
-                            }
-                        }
-                    }
-                    /* End of Skills Section */
+                    
                     .downloadable-version {
     
                         .cv-icon {
@@ -368,8 +370,8 @@
                             a {
                                 margin-right: 0.5em;
                                 color: #FBBF00;
-                                font-weight: 600;
-                                transition: color 0.3s ease;
+                                font-weight: 300;
+                                font-size: 2rem;
                             }
     
                             img {
@@ -383,6 +385,52 @@
 
     
         /* End of About Section */
+
+        /* Start of Skills Section */
+    
+        .skills {
+            @include alignCenter;
+            padding: 1em 1em 5em;
+            background-color: $hdr-ftr-bg;
+            color: $font-color1;
+
+            p {
+                font-size: 2.5rem;
+                margin-bottom: 2em;
+            }
+
+            .tech-skills-a {
+                display: flex;
+                width: 100%;
+                height: auto;
+
+                .group-a, .group-b {
+                    @include alignCenterRow;
+
+                    img {
+                        padding: 1em;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .tech-skills-b {
+                width: 100%;
+                height: auto;
+                @include alignFlexRow;
+
+                .group-c, .group-d {
+                    @include alignCenterRow;
+
+                    img {
+                        padding: 1em;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        /* End of Skills Section */
     
         /* Start of Contact Section */
             
@@ -390,16 +438,24 @@
         #contact.contact {
             background-color: $font-color1;
             align-self: center;
-            padding: 5em 0em 0em 0em;
+            padding: 3em 0em 0em 0em;
     
             h3 {
-                margin-bottom: 0.5em;
+                margin-bottom: 0.25em;
+                @media screen and (max-width:210px) {
+                    word-break: break-all;
+                }
+            }
+
+            h3:first-of-type {
+                padding: 0em 0.5em;
             }
     
             h4 {
-                width: 90%;
+                width: $mobile-width;
                 margin: auto;
                 padding-bottom: 4em;
+                font-size: 2rem;
             }
             
             .contact-container {
@@ -409,12 +465,13 @@
 
                 .contact-form {
                     width: 100%;
-                    padding: 5em 2em 2.5em 2em;
-                    background-color: #000000;
+                    padding: 5em 10% 2.5em 10%;
+                    background-color: $hdr-ftr-bg;
 
                     h3 {
-                        margin-bottom: 0.5em;
+                        margin-bottom: 0.25em;
                         @include alignCenterRow;
+                        font-size: 3rem;
                     }
                     
                     h4 {
@@ -424,34 +481,41 @@
     
                     form {
                         @include align;
-                        width: 80%;
-                        margin: auto;
     
                         textarea, input {
                             background-color: #3d3d3d;
                             border: 2px solid $font-color1;
                             border-radius: 0.3em;
+                            text-align: left;
                         }
     
                         label {
                             padding: 1em 0em 0.5em;
                             text-align: left;
+                            font-size: 2rem;
+                        }
+
+                        ::placeholder {
+                            font-size: 2rem;
+                            text-align: left;
+                            padding-left: 0.5em;
                         }
     
                         button {
-                            @each $property, $value in $btn {
+                            @each $property, $value in $btn-mobile {
                                 #{$property}: $value;
                             }
-                            margin-top: 2em;
-                            transition: background-color 0.3s ease;
+                            margin-top: 5em;
+                            box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
+                            font-size: 2rem;
                         }
                     }
                 }
     
                 .contact-me {
                     width: 100%;
-                    background-color: #000000;
-                    padding: 2.5em 4em 5em;
+                    background-color: $hdr-ftr-bg;
+                    padding: 2.5em 0% 2.5em;
     
                     h3:first-of-type {
                         display: none;
@@ -462,19 +526,19 @@
                     }
 
                     h3:last-of-type {
-                        margin-bottom: 0.5em;
-                        font-weight: 600;
+                        margin-bottom: 0.25em;
                         @include alignCenterRow;
                     }
     
                     h4:last-of-type {
                         margin: auto;
-                        padding-bottom: 3em;
+                        padding-bottom: 8em;
                     }
     
                     .contact-links {
                         @include alignCenter;
                         padding: 0em 3em;
+                        font-size: 2rem;
     
                         .business-phone {
                             @include myContact1(padding 1em 1em);
@@ -482,6 +546,7 @@
                             .phone-icon {
                                 @include alignCenterRow;
                                 @include contactIcons;
+                                background-color: $hdr-ftr-bg;
         
                                 img {
                                     @include contactLinksImg;
@@ -490,6 +555,7 @@
         
                             .phone-number-details {
                                 @include alignCenterRow;
+                                padding: 1em;
                             }
                         }
 
@@ -499,6 +565,7 @@
                             .email-icon {
                                 @include alignCenter;
                                 @include contactIcons;
+                                background-color: $hdr-ftr-bg;
         
                                 img {
                                     @include alignCenter;
@@ -506,10 +573,14 @@
                                 }
                             }
 
-                            @media screen and (max-width:480px) {
+                            @media screen and (max-width:335px) {
                                 .my-email {
                                     word-break: break-all;
                                 }
+                            }
+
+                            .my-email {
+                                padding: 1em;
                             }
                         }
         
@@ -519,39 +590,20 @@
                             .address-icon {
                                 @include alignCenter;
                                 @include contactIcons;
+                                background-color: $hdr-ftr-bg;
         
                                 img {
                                     @include contactLinksImg;
                                 }
+                            }
+
+                            .local-address {
+                                padding: 1em;
                             }
                         }
                         
                         .social-links2 {
-                            @include myContact1(padding 1.5em 1em);
-                            margin-bottom: 0em;
-
-                            .chat-icon {
-                                @include alignCenter;
-                                @include contactIcons;
-        
-                                img {
-                                    @include contactLinksImg;
-                                }
-                            }
-        
-                            .social-icon {
-                                display: flex;
-                                align-items: center;
-                                
-                                a:first-of-type, a:last-of-type {
-                                    @include alignCenter;
-        
-                                    img {
-                                        width: 60%;
-                                        height: auto;
-                                    }
-                                }
-                            }
+                            display: none;
                         }
                     }
                 }
@@ -568,9 +620,10 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            overflow: hidden;
             height: 2em;
             transition: height 0.3s ease;
+            font-size: 2rem;
+            overflow: hidden;
         
             .icon {
                 width: fit-content;
@@ -580,17 +633,24 @@
                 margin: auto;
         
                 img {
-                    width: 60%;
+                    width: 50%;
                     height: auto;
-                    padding: 0.3em 0em;
+                    padding: 0.2em 0em;
                     text-align: center;
                     transform: rotate(0deg);
                     transition: transform 0.3s ease;
-                
-                    &:focus {
-                        outline: solid 2px blue;
-                    }
                 }
+            }
+
+            p {
+                width: 100%;
+                padding: 3em 5% 2em;
+                background-color: $hdr-ftr-bg;
+                color: $font-color1;
+                bottom: -100%;
+                right: 0;
+                z-index: -1;
+                text-align: justify;
             }
         
             &.open {
@@ -601,13 +661,6 @@
                     transform: rotate(180deg);
                     transition-delay: 0.1s;
                 }
-            }
-        
-            p {
-                width: 100%;
-                padding: 3em 5% 2em;
-                background-color: #000000;
-                color: $font-color1;
             }
         }
         
@@ -621,6 +674,7 @@
             background-color: #16181a;
             color: $font-color1;
             padding: 0em 1.5em;
+            box-shadow: 0px -5px 10px 0px #3d3d3d;
     
             .footer-container {
                 padding: 2em 0em;
@@ -631,9 +685,25 @@
                     display: none;
                 }
     
-                address, .legal-regulations {
-                    margin-bottom: 2em;
+                .social-links {
+                    display: none;
+                }
+
+                address {
+                    display: none;
+                }
     
+                .hire {
+                    display: flex;
+                    color: #FBBF00;
+                    font-weight: 600;
+                    margin-bottom: 2em;
+                    font-size: 2rem;
+                }
+
+                .legal-regulations {
+                    font-size: 2rem;
+
                     strong {
                         color: #FBBF00;
                         font-weight: 600;
@@ -643,16 +713,6 @@
                         color: #efefef;
                         font-weight: 300;
                     }
-                }
-    
-                .social-links {
-                    display: none;
-                }
-    
-                .hire {
-                    display: flex;
-                    color: #FBBF00;
-                    font-weight: 600;
                 }
             }
         }/* End of Footer */
