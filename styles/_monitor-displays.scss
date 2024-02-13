@@ -606,7 +606,7 @@
                     color: $font-color1;
                     width: 50%;
                     text-align: left;
-                    background-color: #000000;
+                    background-color: $hdr-ftr-bg;
                     padding: 8em 10% 5em 4em;
     
                     h3:first-of-type {
@@ -760,7 +760,7 @@
                 .contact-form {
                     width: 50%;
                     padding: 8em 4em 5em 10%;
-                    background-color: #000000;
+                    background-color: $hdr-ftr-bg;
                     color: $font-color1;
                     
                     h4 {
@@ -816,7 +816,7 @@
             height: 2em;
             transition: height 0.3s ease;
             padding: 0em 10%;
-            background-color: #000000;
+            background-color: $hdr-ftr-bg;
         
             .icon {
                 width: fit-content;
@@ -855,7 +855,7 @@
             p {
                 width: 100%;
                 padding: 3em 5% 2em;
-                background-color: #000000;
+                background-color: $hdr-ftr-bg;
                 color: $font-color1;
             }
         }

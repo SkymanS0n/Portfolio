@@ -87,58 +87,47 @@
         
         .hero-section {
             background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(220, 220, 220), rgb(186, 186, 186), rgb(160, 160, 160));
-            @include alignCenter;
-    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 4em 0em;
+            
             .hero-container {
                 color: $font-color1;
-                margin: auto;
-                margin-top: 0em;
-                padding-top: 7em;
-                width: $mobile-width;
-                @include alignCenter;
+                display: flex;
+                flex-direction: row;
+                font-size: $mobile-font;
+                width: 90%;
+                height: auto;
                 color: #16181a;
     
                 .hero-details {
-                    width: 100%;
+                    width: 60%;
                     @include align;
-    
+                    justify-content: center;
+                    
                     p, h2 {
-                        margin-bottom: 0em;
-                        &:is(h2) {
-                            width: 100%;
+                        line-height: 1.7em;
+                        margin-bottom: 0.5em;
+                        text-align: left;
+                        font-size: 2rem;
+
+                        &:nth-child(2) {
+                            font-style: italic;
+                        }
+
+                        & + h2 {
                             margin-top: 1em;
                             font-size: 2rem;
-                            animation: fadeIn 1.6s ease-in-out forwards;
-                        }
-
-                        &:is(p) {
-                            font-size: 2rem;
-                            margin-bottom: 1.5em;
-                            animation: fadeIn 1.3s ease-in-out forwards;
                         }
                     }
-                    
+    
                     h1 {
-                        font-size: 4.5rem;
+                        font-size: 5rem;
                         font-weight: 600;
-                        margin-bottom: 0em;
-                        opacity: 0;
-                        animation: fadeIn 1s ease-in-out forwards;
-                    }
-
-                    h2 {
-                        text-align: justify;
-                    }
-                    
-                    @keyframes fadeIn {
-                        from {
-                            opacity: 0;
-                            transform: translateY(10px);
-                        }
-                        to {
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
+                        margin-bottom: 0.3em;
+                        text-align: left;
                     }
     
                     .buttons {
@@ -147,23 +136,11 @@
                 }
     
                 .hero-img {
-                    opacity: 0;
-                    filter: blur(10px); /* Initial blur effect */
-                    margin: 1.5em 0em 2em;
-                    width: 70%;
+                    margin-top: 2em;
+                    margin-bottom: 4em;
+                    max-width: 50%;
+                    min-width: 25%;
                     height: auto;
-                    animation: fadeInAndBlurRemoval 0.8s ease-in-out 0.5s forwards;
-                }
-                
-                @keyframes fadeInAndBlurRemoval {
-                    from {
-                        opacity: 0;
-                        filter: blur(10px);
-                    }
-                    to {
-                        opacity: 1;
-                        filter: blur(0);
-                    }
                 }
             }
     
@@ -188,12 +165,11 @@
 
             h3 {
                 font-size: 3.5rem;
-                margin-top: 0.5em;
             }
         
             h4 {
                 margin-top: 0.5em;
-                margin-bottom: 5em;
+                margin-bottom: 3em;
                 font-size: 2rem;
             }
         
@@ -238,7 +214,7 @@
                             display: flex;
                             text-align: center;
                             font-size: 2rem;
-                            width: 90%;
+                            width: 50%;
                             justify-content: center;
                         }
                 
