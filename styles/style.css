@@ -1669,81 +1669,54 @@ h4 {
   .container .hero-section {
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(220, 220, 220), rgb(186, 186, 186), rgb(160, 160, 160));
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 4em 0em;
   }
   .container .hero-section .hero-container {
     color: #efefef;
-    margin: auto;
-    margin-top: 0em;
-    padding-top: 7em;
-    width: 90%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    font-size: 2rem;
+    width: 90%;
+    height: auto;
     color: #16181a;
   }
   .container .hero-section .hero-container .hero-details {
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .container .hero-section .hero-container .hero-details p, .container .hero-section .hero-container .hero-details h2 {
-    margin-bottom: 0em;
+    line-height: 1.7em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-size: 2rem;
   }
-  .container .hero-section .hero-container .hero-details p:is(h2), .container .hero-section .hero-container .hero-details h2:is(h2) {
-    width: 100%;
+  .container .hero-section .hero-container .hero-details p:nth-child(2), .container .hero-section .hero-container .hero-details h2:nth-child(2) {
+    font-style: italic;
+  }
+  .container .hero-section .hero-container .hero-details p + h2, .container .hero-section .hero-container .hero-details h2 + h2 {
     margin-top: 1em;
     font-size: 2rem;
-    animation: fadeIn 1.6s ease-in-out forwards;
-  }
-  .container .hero-section .hero-container .hero-details p:is(p), .container .hero-section .hero-container .hero-details h2:is(p) {
-    font-size: 2rem;
-    margin-bottom: 1.5em;
-    animation: fadeIn 1.3s ease-in-out forwards;
   }
   .container .hero-section .hero-container .hero-details h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 600;
-    margin-bottom: 0em;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-  }
-  .container .hero-section .hero-container .hero-details h2 {
-    text-align: justify;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    margin-bottom: 0.3em;
+    text-align: left;
   }
   .container .hero-section .hero-container .hero-details .buttons {
     display: none;
   }
   .container .hero-section .hero-container .hero-img {
-    opacity: 0;
-    filter: blur(10px); /* Initial blur effect */
-    margin: 1.5em 0em 2em;
-    width: 70%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    max-width: 50%;
+    min-width: 25%;
     height: auto;
-    animation: fadeInAndBlurRemoval 0.8s ease-in-out 0.5s forwards;
-  }
-  @keyframes fadeInAndBlurRemoval {
-    from {
-      opacity: 0;
-      filter: blur(10px);
-    }
-    to {
-      opacity: 1;
-      filter: blur(0);
-    }
   }
   .container .hero-section #buttons2 {
     display: none;
@@ -1757,11 +1730,10 @@ h4 {
   }
   .container #projects.projects-section h3 {
     font-size: 3.5rem;
-    margin-top: 0.5em;
   }
   .container #projects.projects-section h4 {
     margin-top: 0.5em;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     font-size: 2rem;
   }
   .container #projects.projects-section .featured-projects {
@@ -1812,7 +1784,7 @@ h4 {
     display: flex;
     text-align: center;
     font-size: 2rem;
-    width: 90%;
+    width: 50%;
     justify-content: center;
   }
   .container #projects.projects-section .featured-projects .carousel .project-a .buttons-a,
@@ -2878,7 +2850,7 @@ h4 {
     color: #efefef;
     width: 50%;
     text-align: left;
-    background-color: #000000;
+    background-color: #16181a;
     padding: 8em 10% 5em 4em;
   }
   #contact.contact .contact-container .contact-me h3:first-of-type {
@@ -3052,7 +3024,7 @@ h4 {
   #contact.contact .contact-container .contact-form {
     width: 50%;
     padding: 8em 4em 5em 10%;
-    background-color: #000000;
+    background-color: #16181a;
     color: #efefef;
   }
   #contact.contact .contact-container .contact-form h4 {
@@ -3099,7 +3071,7 @@ h4 {
     height: 2em;
     transition: height 0.3s ease;
     padding: 0em 10%;
-    background-color: #000000;
+    background-color: #16181a;
   }
   .dev-process .icon {
     width: -moz-fit-content;
@@ -3136,7 +3108,7 @@ h4 {
   .dev-process p {
     width: 100%;
     padding: 3em 5% 2em;
-    background-color: #000000;
+    background-color: #16181a;
     color: #efefef;
   }
   footer {
