@@ -73,7 +73,11 @@
                             </div>
                         </div>
                         <div class="hero-img">
-                            <img src="images/profile-photo-4.png" alt="Jerico's professional profile photo">
+                            <picture>
+                                <source media="(max-width: 1080px)" srcset="images/profile-photo-4.png">
+                                <source media="(min-width: 1081px)" srcset="images/profile-img.png">
+                                <img src="images/profile-photo-4.png" alt="Jerico's professional profile photo">
+                            </picture>
                         </div>
                         <div id = "buttons2" class="buttons">
                             <button class="view-work" onclick="location.href= '#projects' ">
