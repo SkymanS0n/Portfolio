@@ -17,7 +17,8 @@ body.show-focus-outline a:focus,
 body.show-focus-outline button:focus,
 body.show-focus-outline input:focus,
 body.show-focus-outline select:focus,
-body.show-focus-outline textarea:focus {
+body.show-focus-outline textarea:focus,
+body.show-focus-outline .icon:focus {
   outline: 2px solid blue;
 }
 

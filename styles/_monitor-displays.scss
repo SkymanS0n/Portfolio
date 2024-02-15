@@ -861,9 +861,6 @@
                     transform: rotate(0deg);
                     transition: transform 0.3s ease;
                 
-                    &:focus {
-                        outline: solid 2px blue;
-                    }
                 }
 
                 &:hover {

@@ -18,7 +18,8 @@ body.show-focus-outline a:focus,
 body.show-focus-outline button:focus,
 body.show-focus-outline input:focus,
 body.show-focus-outline select:focus,
-body.show-focus-outline textarea:focus {
+body.show-focus-outline textarea:focus,
+body.show-focus-outline .icon:focus {
   outline: 2px solid blue;
 }
 
@@ -3154,9 +3155,6 @@ h4 {
     transform: rotate(0deg);
     transition: transform 0.3s ease;
   }
-  .dev-process .icon img:focus {
-    outline: solid 2px blue;
-  }
   .dev-process .icon:hover {
     cursor: pointer;
   }
@@ -4078,9 +4076,6 @@ h4 {
     padding: 0.3em 0em;
     transform: rotate(0deg);
     transition: transform 0.3s ease;
-  }
-  .dev-process .icon img:focus {
-    outline: solid 2px blue;
   }
   .dev-process .icon:hover {
     cursor: pointer;
