@@ -44,11 +44,9 @@
 
                 @keyframes fadeInLogo {
                     from {
-                        opacity: 0;
                         transform: rotate(90deg);
                     }
                     to {
-                        opacity: 1;
                         transform: rotate(0);
                     }
                 }
@@ -66,6 +64,11 @@
                         .menu-link {
                             animation: fadeInMenu 1.6s ease-in-out forwards;
                         }
+                    }
+
+                    &:checked ~ .mobile-footer {
+                        left: 0;
+                        transition: 0.4s ease-in-out;
                     }
 
                     @keyframes fadeInMenu {
@@ -86,6 +89,13 @@
                         top: 3.125em;
                         transition: 0.5s ease-in-out;
                         z-index: -1;
+                    }
+
+                    &:not(:checked) ~ .mobile-footer {
+                        background-color: rgb(221, 219, 219);
+                        left: -100%;
+                        right: 0;
+                        transition: 0.5s ease-in-out;
                     }
                 }
                 
@@ -180,10 +190,11 @@
                             padding: 2em 0em;
                             @include alignCenter;
                             font-size: 1.2rem;
-                            width: 100%;
+                            width: 85%;
                             color: #16181a;
                             z-index: -1;
-                            justify-content: flex-end;
+                            position: fixed;
+                            bottom: 0;
                 
                             .legal-regulations {
                                 @include alignCenter;

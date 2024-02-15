@@ -18,7 +18,8 @@ body.show-focus-outline a:focus,
 body.show-focus-outline button:focus,
 body.show-focus-outline input:focus,
 body.show-focus-outline select:focus,
-body.show-focus-outline textarea:focus {
+body.show-focus-outline textarea:focus,
+body.show-focus-outline .icon:focus {
   outline: 2px solid blue;
 }
 
@@ -94,11 +95,9 @@ h4 {
   }
   @keyframes fadeInLogo {
     from {
-      opacity: 0;
       transform: rotate(90deg);
     }
     to {
-      opacity: 1;
       transform: rotate(0);
     }
   }
@@ -114,6 +113,10 @@ h4 {
   }
   .container header .nav-section #menu-toggle:checked ~ .slide-menu .menu-link {
     animation: fadeInMenu 1.6s ease-in-out forwards;
+  }
+  .container header .nav-section #menu-toggle:checked ~ .mobile-footer {
+    left: 0;
+    transition: 0.4s ease-in-out;
   }
   @keyframes fadeInMenu {
     from {
@@ -132,6 +135,12 @@ h4 {
     top: 3.125em;
     transition: 0.5s ease-in-out;
     z-index: -1;
+  }
+  .container header .nav-section #menu-toggle:not(:checked) ~ .mobile-footer {
+    background-color: rgb(221, 219, 219);
+    left: -100%;
+    right: 0;
+    transition: 0.5s ease-in-out;
   }
   .container header .nav-section .hamburger {
     align-self: center;
@@ -241,10 +250,11 @@ h4 {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    width: 100%;
+    width: 85%;
     color: #16181a;
     z-index: -1;
-    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
   }
   .container header .nav-section .slide-menu .nav-bar-links .mobile-footer .legal-regulations {
     display: flex;
@@ -1697,26 +1707,51 @@ h4 {
   }
   .container .hero-section .hero-container .hero-details p:nth-child(2), .container .hero-section .hero-container .hero-details h2:nth-child(2) {
     font-style: italic;
+    animation: fadeIn 1.6s ease-in-out forwards;
   }
   .container .hero-section .hero-container .hero-details p + h2, .container .hero-section .hero-container .hero-details h2 + h2 {
     margin-top: 1em;
     font-size: 2rem;
+    animation: fadeIn 1.3s ease-in-out forwards;
   }
   .container .hero-section .hero-container .hero-details h1 {
     font-size: 5rem;
     font-weight: 600;
     margin-bottom: 0.3em;
     text-align: left;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .container .hero-section .hero-container .hero-details .buttons {
     display: none;
   }
   .container .hero-section .hero-container .hero-img {
+    opacity: 0;
     margin-top: 2em;
     margin-bottom: 4em;
     max-width: 50%;
     min-width: 25%;
     height: auto;
+    animation: fadeInAndBlurRemoval 1s ease-in-out 0.5s forwards;
+  }
+  @keyframes fadeInAndBlurRemoval {
+    from {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+    }
   }
   .container .hero-section #buttons2 {
     display: none;
@@ -1730,11 +1765,13 @@ h4 {
   }
   .container #projects.projects-section h3 {
     font-size: 3.5rem;
+    animation: fadeIn 2s ease-in-out forwards;
   }
   .container #projects.projects-section h4 {
     margin-top: 0.5em;
     margin-bottom: 3em;
     font-size: 2rem;
+    animation: fadeIn 2.3s ease-in-out forwards;
   }
   .container #projects.projects-section .featured-projects {
     overflow: hidden;
@@ -2348,8 +2385,9 @@ h4 {
     transition: color 0.3s ease;
     font-size: 2rem;
   }
-  header .nav-section .slide-menu .nav-bar-links li:hover {
+  header .nav-section .slide-menu .nav-bar-links li a:hover {
     cursor: pointer;
+    color: #FBBF00;
   }
   header .nav-section .slide-menu .nav-bar-links .menu-send-message {
     display: none;
@@ -2394,25 +2432,50 @@ h4 {
   }
   .hero-section .hero-container .hero-details p:nth-child(2), .hero-section .hero-container .hero-details h2:nth-child(2) {
     font-style: italic;
+    animation: fadeIn 1.6s ease-in-out forwards;
   }
   .hero-section .hero-container .hero-details p + h2, .hero-section .hero-container .hero-details h2 + h2 {
     margin-top: 2em;
     font-size: 2rem;
+    animation: fadeIn 1.3s ease-in-out forwards;
   }
   .hero-section .hero-container .hero-details h1 {
     font-size: 5rem;
     font-weight: 600;
     margin-bottom: 0.3em;
     text-align: left;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .hero-section .hero-container .hero-details .buttons {
     display: none;
   }
   .hero-section .hero-container .hero-img {
+    opacity: 0;
     margin-top: 2em;
     margin-bottom: 4em;
     max-width: 40%;
     height: auto;
+    animation: fadeInAndBlurRemoval 1s ease-in-out 0.5s forwards;
+  }
+  @keyframes fadeInAndBlurRemoval {
+    from {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+    }
   }
   .hero-section #buttons2 {
     display: none;
@@ -2429,10 +2492,12 @@ h4 {
   }
   #projects.projects-section h3 {
     margin-bottom: 1em;
+    animation: fadeIn 2s ease-in-out forwards;
   }
   #projects.projects-section h4 {
     margin-bottom: 4em;
     font-size: 2.5rem;
+    animation: fadeIn 2.3s ease-in-out forwards;
   }
   #projects.projects-section .featured-projects {
     position: relative;
@@ -3091,9 +3156,6 @@ h4 {
     transform: rotate(0deg);
     transition: transform 0.3s ease;
   }
-  .dev-process .icon img:focus {
-    outline: solid 2px blue;
-  }
   .dev-process .icon:hover {
     cursor: pointer;
   }
@@ -3241,8 +3303,9 @@ h4 {
     transition: color 0.3s ease;
     font-size: 2rem;
   }
-  header .nav-section .slide-menu .nav-bar-links li:hover {
+  header .nav-section .slide-menu .nav-bar-links li a:hover {
     cursor: pointer;
+    color: #FBBF00;
   }
   header .nav-section .slide-menu .nav-bar-links .menu-send-message {
     display: none;
@@ -3286,24 +3349,49 @@ h4 {
   }
   .hero-section .hero-container .hero-details p:nth-child(2), .hero-section .hero-container .hero-details h2:nth-child(2) {
     font-style: italic;
+    animation: fadeIn 1.6s ease-in-out forwards;
   }
   .hero-section .hero-container .hero-details p + h2, .hero-section .hero-container .hero-details h2 + h2 {
     margin-top: 2em;
+    animation: fadeIn 1.3s ease-in-out forwards;
   }
   .hero-section .hero-container .hero-details h1 {
     font-size: 5rem;
     font-weight: 600;
     margin-bottom: 0.3em;
     text-align: left;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .hero-section .hero-container .hero-details .buttons {
     display: none;
   }
   .hero-section .hero-container .hero-img {
+    opacity: 0;
     margin-top: 2em;
     margin-bottom: 4em;
     max-width: 40%;
     height: auto;
+    animation: fadeInAndBlurRemoval 1s ease-in-out 0.5s forwards;
+  }
+  @keyframes fadeInAndBlurRemoval {
+    from {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+    }
   }
   .hero-section #buttons2 {
     display: none;
@@ -3321,10 +3409,12 @@ h4 {
   #projects.projects-section h3 {
     margin-bottom: 1em;
     font-size: 3rem;
+    animation: fadeIn 2s ease-in-out forwards;
   }
   #projects.projects-section h4 {
     margin-bottom: 4em;
     font-size: 2rem;
+    animation: fadeIn 2.3s ease-in-out forwards;
   }
   #projects.projects-section .featured-projects {
     position: relative;
@@ -3988,9 +4078,6 @@ h4 {
     padding: 0.3em 0em;
     transform: rotate(0deg);
     transition: transform 0.3s ease;
-  }
-  .dev-process .icon img:focus {
-    outline: solid 2px blue;
   }
   .dev-process .icon:hover {
     cursor: pointer;

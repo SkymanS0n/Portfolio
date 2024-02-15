@@ -73,7 +73,11 @@
                             </div>
                         </div>
                         <div class="hero-img">
-                            <img src="images/profile-photo-4.png" alt="Jerico's professional profile photo">
+                            <picture>
+                                <source media="(max-width: 1080px)" srcset="images/profile-photo-4.png">
+                                <source media="(min-width: 1081px)" srcset="images/profile-img.png">
+                                <img src="images/profile-photo-4.png" alt="Jerico's professional profile photo">
+                            </picture>
                         </div>
                         <div id = "buttons2" class="buttons">
                             <button class="view-work" onclick="location.href= '#projects' ">
@@ -91,7 +95,7 @@
                     <div class="featured-projects">
                         <div class="carousel">
                             <div class="project-a">
-                                <a href="https://addtocart.my.canva.site/recidencia-martinez">
+                                <a img href="images/Project-A.png">
                                     <img src="images/project-aa.png" alt="Mockup of the Zalora app design displayed on a mobile phone.">
                                 </a>
                                 <p>
@@ -112,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="project-b">
-                                <a href="your-link-url" aria-label="NoteShelf. Noteshelf is a versatile note-taking app designed for digital devices. It provides users with a user-friendly platform to create, organize, and personalize their digital notes. With features like handwriting recognition, various pen tools, and customizable notebooks, Noteshelf offers a seamless experience for users who prefer the convenience of digital note-taking. Whether jotting down ideas, sketching diagrams, or annotating documents, Noteshelf aims to enhance productivity and creativity in a digital note-taking environment. This project is currently on hold. We appreciate your patience and look forward to getting back on track soon!">
+                                <a href="images/Project-B.png" aria-label="NoteShelf. Noteshelf is a versatile note-taking app designed for digital devices. It provides users with a user-friendly platform to create, organize, and personalize their digital notes. With features like handwriting recognition, various pen tools, and customizable notebooks, Noteshelf offers a seamless experience for users who prefer the convenience of digital note-taking. Whether jotting down ideas, sketching diagrams, or annotating documents, Noteshelf aims to enhance productivity and creativity in a digital note-taking environment. This project is currently on hold. We appreciate your patience and look forward to getting back on track soon!">
                                     <img src="images/project-bb.png" loading = "lazy" alt="Mockup image of the Noteshelf app design displayed on a tablet.">
                                 </a>
                                 <p aria-hidden="true">
@@ -133,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="project-c">
-                                <a href="your-link-url">
+                                <a href="images/Project-C.png">
                                     <img src="images/project-cc.png" loading = "lazy" alt="Mockup of the Orthodox website design displayed on a computer monitor.">
                                 </a>
                                 <p>
@@ -293,8 +297,8 @@
                     </div>
                 </section> <!-- End of Contact Section -->
                 <div class="dev-process">
-                    <div class="icon">
-                        <img src="images/dropdown.png" alt="A dropdown icon" tabindex="0">
+                    <div class="icon" tabindex="0">
+                        <img src="images/dropdown.png" alt="A dropdown icon">
                     </div>
                     <p>I designed and developed this portfolio website using a blend of traditional paper sketches and Figma. The coding phase took place in Visual Studio Code, using HTML, CSS, Sass, and JavaScript. The finished website was then deployed on GitHub using GitHub Pages for seamless online accessibility.</p>
                 </div>
