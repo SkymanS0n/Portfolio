@@ -115,11 +115,13 @@
 
                         &:nth-child(2) {
                             font-style: italic;
+                            animation: fadeIn 1.6s ease-in-out forwards;
                         }
 
                         & + h2 {
                             margin-top: 1em;
                             font-size: 2rem;
+                            animation: fadeIn 1.3s ease-in-out forwards;
                         }
                     }
     
@@ -128,6 +130,18 @@
                         font-weight: 600;
                         margin-bottom: 0.3em;
                         text-align: left;
+                        animation: fadeIn 1s ease-in-out forwards;
+                    }
+
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                            transform: translateY(10px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
                     }
     
                     .buttons {
@@ -136,11 +150,24 @@
                 }
     
                 .hero-img {
+                    opacity: 0;
                     margin-top: 2em;
                     margin-bottom: 4em;
                     max-width: 50%;
                     min-width: 25%;
                     height: auto;
+                    animation: fadeInAndBlurRemoval 1s ease-in-out 0.5s forwards;
+                }
+
+                @keyframes fadeInAndBlurRemoval {
+                    from {
+                        opacity: 0;
+                        filter: blur(10px);
+                    }
+                    to {
+                        opacity: 1;
+                        filter: blur(0);
+                    }
                 }
             }
     
@@ -165,12 +192,14 @@
 
             h3 {
                 font-size: 3.5rem;
+                animation: fadeIn 2.0s ease-in-out forwards;
             }
         
             h4 {
                 margin-top: 0.5em;
                 margin-bottom: 3em;
                 font-size: 2rem;
+                animation: fadeIn 2.3s ease-in-out forwards;
             }
         
             .featured-projects {
