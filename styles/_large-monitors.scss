@@ -61,10 +61,11 @@
                             color: $font-color1;
                             transition: color 0.3s ease;
                             font-size: 2rem;
-                        }
 
-                        &:hover {
-                            cursor: pointer;
+                            &:hover {
+                                cursor: pointer;
+                                color: #FBBF00;
+                            }
                         }
                     }
 

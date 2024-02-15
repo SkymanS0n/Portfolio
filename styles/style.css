@@ -2385,8 +2385,9 @@ h4 {
     transition: color 0.3s ease;
     font-size: 2rem;
   }
-  header .nav-section .slide-menu .nav-bar-links li:hover {
+  header .nav-section .slide-menu .nav-bar-links li a:hover {
     cursor: pointer;
+    color: #FBBF00;
   }
   header .nav-section .slide-menu .nav-bar-links .menu-send-message {
     display: none;
@@ -3302,8 +3303,9 @@ h4 {
     transition: color 0.3s ease;
     font-size: 2rem;
   }
-  header .nav-section .slide-menu .nav-bar-links li:hover {
+  header .nav-section .slide-menu .nav-bar-links li a:hover {
     cursor: pointer;
+    color: #FBBF00;
   }
   header .nav-section .slide-menu .nav-bar-links .menu-send-message {
     display: none;
