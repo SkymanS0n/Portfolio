@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Jerico Eijansantos' Portfolio">
+        <meta property="og:description" content="I create end-to-end web solutions by handling both front-end and back-end development, ensuring seamless functionality and a user-friendly experience.">
+        <meta property="og:image" content="https://skymans0n.github.io/portfolio-jerico-eijansantos/images/profile-photo-3.png">
+        <meta property="og:url" content="https://www.jerico-dev.com">
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="270193152282911">
+        <title>Jerico Eijansantos Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header aria-hidden="true"> <!-- Start of header -->
+                <div class="nav-section">
+                    <a id = "logo" href="index.html">
+                        <img src="images/my-logo.png" alt="Jerico Eijansantos logo">
+                    </a>
+                    <input type="checkbox" id = "menu-toggle">
+                    <label for="menu-toggle" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>       
+                    <nav class = "slide-menu">
+                        <div class="my-address">
+                            <div class="my-avatar">
+                                <img src="images/profile-photo-3.png" alt="Jerico's professional profile photo thumbnail">
+                            </div>
+                            <div class="my-location">
+                                <p>Jerico C. Eijansantos</p>
+                                <p aria-label="Jerico's mailing address. Mati City, Philippines">Mati City, Philippines</p>
+                            </div>
+                        </div>
+                        <ul class = "nav-bar-links">
+                            <li><a href="https://skymans0n.notion.site/My-Web-Development-Journey-6e979fca1455470f8a4ec24f5e71b810?pvs=4" aria-label="Blog. Select to read Jerico's blog" class="menu-link">Blog</a></li>
+                            <li><a href="https://github.com/SkymanS0n" class="menu-link" aria-label="GitHub. Select to inspect Jerico's online repositories">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/jerico-eijansantos/" class="menu-link" aria-label="LinkedIn. Select to view Jerico's profile on LinkedIn">LinkedIn</a></li>
+                            <li><a href="https://drive.google.com/file/d/1-MSgQA9GisDxS7wqudNKQwvUlcKNErqS/view?usp=sharing" class="menu-link" aria-label="Resume. Select to view Jerico's technical resume.">Resume</a></li>
+                            <button class="menu-send-message" onclick="location. href='mailto:jerico@developer.com?subject=Inquiry'" aria-label="Tap to select and contact Jerico to hire him.">Hire this guy!
+                            </button>
+                            <div class="mobile-footer">
+                                <div class="legal-regulations">
+                                    <a href="#">Terms & Conditions</a>
+                                    <p aria-label="copyright 2024, Jerico Eijansantos, all rights reserved.">© 2024 Jerico Eijansantos | <span>All rights reserved</span></p>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </header> <!-- End of header -->
+            <div class="contact-form">
+                <h3>Join our waitlist</h3>
+                <h4>Exciting News! This project is currently on-hold and is set to resume soon.</h4>
+                <form action="https://formspree.io/f/xjvnygvp" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
