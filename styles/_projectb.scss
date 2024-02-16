@@ -32,8 +32,13 @@
                 padding-top: 1em;
                 padding-bottom: 0.5em;
                 color: $font-color1;
+                text-align: left;
             }
 
+            ::placeholder {
+                text-align: left;
+                padding-left: 0.25em;
+            }
             button {
                 margin: 5em 0em 5em;
                 @each $property, $value in $btn-mobile {

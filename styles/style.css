@@ -4480,6 +4480,15 @@ h4 {
     padding-top: 1em;
     padding-bottom: 0.5em;
     color: #efefef;
+    text-align: left;
+  }
+  .contact-form form ::-moz-placeholder {
+    text-align: left;
+    padding-left: 0.25em;
+  }
+  .contact-form form ::placeholder {
+    text-align: left;
+    padding-left: 0.25em;
   }
   .contact-form form button {
     margin: 5em 0em 5em;
