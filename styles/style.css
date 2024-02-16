@@ -2545,6 +2545,7 @@ h4 {
     height: auto;
     margin-bottom: 1em;
     transition: transform 0.3s ease;
+    filter: blur(10px); /* Adjust the blur amount */
   }
   #projects.projects-section .featured-projects .carousel .project-a p,
   #projects.projects-section .featured-projects .carousel .project-b p,
@@ -3462,6 +3463,7 @@ h4 {
     height: auto;
     margin-bottom: 1em;
     transition: transform 0.3s ease;
+    filter: blur(10px); /* Adjust the blur amount */
   }
   #projects.projects-section .featured-projects .carousel .project-a p,
   #projects.projects-section .featured-projects .carousel .project-b p,
