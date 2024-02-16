@@ -244,6 +244,7 @@
                         height: auto;
                         margin-bottom: 1em;
                         transition: transform 0.3s ease;
+                        filter: blur(10px); /* Adjust the blur amount */
                     }
 
                     p {
