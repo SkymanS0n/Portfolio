@@ -1,0 +1,86 @@
+@media screen and (min-width:1081px) and (max-width:1440px) {
+    header {
+        background-color: $hdr-ftr-bg;
+        box-shadow: 0px 2px 4px rgba(87, 87, 87, 0.4);
+        padding: 0.75em 15% 0.75em 15%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+
+        .nav-section {
+            align-items: center;
+            color: $font-color1;
+            display: flex;
+            margin: auto;
+            width: 90%;
+
+            #logo {
+                z-index: 2;
+                @include alignCenterRow;
+            
+                img {
+                    max-width: 33px;
+                    height: auto;
+                    min-width: 33px;
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover img {
+                    cursor: pointer;
+                    transform: rotate(90deg);
+                }
+            }
+
+            #menu-toggle {
+                display: none;
+            }
+            
+            .hamburger {
+                display: none;
+            }
+
+            .slide-menu {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 2rem;
+                width: 100%;
+
+                .nav-bar-links {
+                    @include alignCenterRow;
+
+                    li {
+
+                        a {
+                            padding: 0.5em 0em 0.5em 0.5em;
+                            margin-left: 1em;
+                            color: $font-color1;
+                            transition: color 0.3s ease;
+                            font-size: 2rem;
+
+                            &:hover {
+                                cursor: pointer;
+                                color: #FBBF00;
+                            }
+                        }
+                    }
+
+                    .menu-send-message {
+                        display: none;
+                    }
+                }
+
+                .my-address {
+                    display: none;
+                }
+            }
+
+            .mobile-footer {
+                display:  none;
+            }
+        }
+    }
+        
+    
+    /* End of Header Section */
+}
