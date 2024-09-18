@@ -3089,6 +3089,7 @@ h4 {
   }
   #contact.contact .contact-container .contact-form {
     width: 50%;
+    height: auto;
     padding: 8em 4em 5em 10%;
     background-color: #16181a;
     color: #efefef;
@@ -4011,6 +4012,7 @@ h4 {
   }
   #contact.contact .contact-container .contact-form {
     width: 50%;
+    height: auto;
     padding: 8em 4em 5em 10%;
     background-color: #16181a;
     color: #efefef;
