@@ -1210,6 +1210,7 @@ h4 {
     line-height: 1.5;
     font-size: 2rem;
     text-align: justify;
+    margin-bottom: 0em;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .other-versions .somewhat-long p span {
     word-break: break-all;
@@ -1219,6 +1220,9 @@ h4 {
     font-weight: 300;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .other-versions .somewhat-long img {
+    display: none;
+  }
+  .container #aboutmyself.aboutmyself .about-me-container .about-me-details .downloadable-version {
     display: none;
   }
   .container #aboutmyself.aboutmyself .about-me-container .about-me-details .downloadable-version .cv-icon {
@@ -1280,7 +1284,7 @@ h4 {
   .container #contact.contact {
     background-color: #efefef;
     align-self: center;
-    padding: 3em 0em 0em 0em;
+    padding: 4em 0em 0em 0em;
   }
   .container #contact.contact h3 {
     margin-bottom: 0.25em;
@@ -1311,6 +1315,7 @@ h4 {
   }
   .container #contact.contact .contact-container .contact-form {
     width: 100%;
+    height: auto;
     padding: 5em 10% 2.5em 10%;
     background-color: #16181a;
   }
