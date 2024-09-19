@@ -4172,13 +4172,14 @@ h4 {
 }
 @media screen and (min-width: 1440px) {
   .contact-form {
+    padding: 8em 35% 5em 35%;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 8em 35% 5em 35%;
     background-color: #16181a;
     color: #efefef;
+    overflow-y: auto;
   }
   .contact-form h3 {
     margin-bottom: 2em;
@@ -4235,13 +4236,14 @@ h4 {
 }
 @media screen and (min-width: 1081px) and (max-width: 1439px) {
   .contact-form {
+    padding: 8em 30% 5em 30%;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 8em 30% 5em 30%;
     background-color: #16181a;
     color: #efefef;
+    overflow-y: auto;
   }
   .contact-form h3 {
     margin-bottom: 2em;
@@ -4307,13 +4309,14 @@ h4 {
 }
 @media screen and (min-width: 451px) and (max-width: 1080px) {
   .contact-form {
+    padding: 8em 20% 5em 20%;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 8em 20% 5em 20%;
     background-color: #16181a;
     color: #efefef;
+    overflow-y: auto;
   }
   .contact-form h3 {
     margin-bottom: 2em;
@@ -4379,12 +4382,14 @@ h4 {
 }
 @media screen and (max-width: 450px) {
   .contact-form {
+    padding: 5em 10% 5em 10%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5em 10% 5em 10%;
     background-color: #16181a;
     color: #efefef;
+    overflow-y: auto;
   }
   .contact-form h3 {
     margin-bottom: 2em;
