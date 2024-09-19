@@ -2630,7 +2630,7 @@ h4 {
     display: none;
   }
 }
-@media screen and (min-width: 1081px) and (max-width: 1440px) and (min-width: 1081px) and (max-width: 1440px) and (min-height: 601px) and (max-height: 800px) {
+@media screen and (min-width: 1081px) and (max-width: 1440px) and (min-width: 1081px) and (max-width: 1440px) and (min-height: 601px) and (max-height: 800px) and (-webkit-min-device-pixel-ratio: 1.5625), screen and (min-width: 1081px) and (max-width: 1440px) and (min-width: 1081px) and (max-width: 1440px) and (min-height: 601px) and (max-height: 800px) and (min-resolution: 150dpi) {
   #projects.projects-section {
     height: auto;
     background-color: #eaeaea;
