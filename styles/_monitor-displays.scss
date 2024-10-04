@@ -634,6 +634,9 @@
                 text-align: left;
     
                 .contact-me {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     color: $font-color1;
                     width: 50%;
                     text-align: left;
@@ -649,7 +652,7 @@
                     }
     
                     h4:last-of-type {
-                        margin: auto;
+                        margin: 0em;
                         padding-bottom: 6em;
                     }
     
@@ -719,7 +722,7 @@
     
                     .address2 {
                         display: flex;
-                        padding: 0em 1em 1em 1em;
+                        padding: 1em 1em 1em 1em;
                         font-weight: 100;
     
                         img {
@@ -746,7 +749,7 @@
                     .social-links2 {
                         display: flex;
                         margin-bottom: 3em;
-                        padding: 0em 1em 1em 1em;
+                        padding: 1em 1em 1em 1em;
     
                         .social-icon {
                             display: flex;
@@ -937,12 +940,12 @@
                     right: 20%;
     
                     strong {
-                        color: $font-color1;
+                        color: #FBBF00;
                         transition: color 0.3s ease;
     
                         &:hover {
                             cursor: pointer;
-                            color: #FBBF00;
+                            color: $font-color1;
                         }
                     }
                 }
@@ -965,7 +968,7 @@
     
                         &:hover {
                             cursor: pointer;
-                            color: #ffaa00;
+                            color: $font-color1;
                         }
                     }
                 }
