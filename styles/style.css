@@ -2918,6 +2918,9 @@ h4 {
     text-align: left;
   }
   #contact.contact .contact-container .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #efefef;
     width: 50%;
     text-align: left;
@@ -2931,7 +2934,7 @@ h4 {
     display: none;
   }
   #contact.contact .contact-container .contact-me h4:last-of-type {
-    margin: auto;
+    margin: 0em;
     padding-bottom: 6em;
   }
   #contact.contact .contact-container .contact-me .send-message {
@@ -3037,7 +3040,7 @@ h4 {
   }
   #contact.contact .contact-container .contact-me .address2 {
     display: flex;
-    padding: 0em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
     font-weight: 100;
   }
   #contact.contact .contact-container .contact-me .address2 img {
@@ -3059,7 +3062,7 @@ h4 {
   #contact.contact .contact-container .contact-me .social-links2 {
     display: flex;
     margin-bottom: 3em;
-    padding: 0em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
   }
   #contact.contact .contact-container .contact-me .social-links2 .social-icon {
     display: flex;
@@ -3219,12 +3222,12 @@ h4 {
     right: 20%;
   }
   footer .footer-container .legal-regulations strong {
-    color: #efefef;
+    color: #FBBF00;
     transition: color 0.3s ease;
   }
   footer .footer-container .legal-regulations strong:hover {
     cursor: pointer;
-    color: #FBBF00;
+    color: #efefef;
   }
   footer .footer-container .social-links {
     display: none;
@@ -3243,7 +3246,7 @@ h4 {
   }
   footer .footer-container .hire strong:hover {
     cursor: pointer;
-    color: #ffaa00;
+    color: #efefef;
   }
   footer.footer-fixed {
     position: fixed;
@@ -3841,11 +3844,14 @@ h4 {
     text-align: left;
   }
   #contact.contact .contact-container .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #efefef;
     width: 50%;
     text-align: left;
     background-color: #16181a;
-    padding: 8em 10% 5em 4em;
+    padding: 8em 20% 5em 4em;
   }
   #contact.contact .contact-container .contact-me h3:first-of-type {
     display: none;
@@ -3854,7 +3860,7 @@ h4 {
     display: none;
   }
   #contact.contact .contact-container .contact-me h4:last-of-type {
-    margin: auto;
+    margin: 0em 0em 0em 0em;
     padding-bottom: 6em;
   }
   #contact.contact .contact-container .contact-me .send-message {
@@ -3960,7 +3966,7 @@ h4 {
   }
   #contact.contact .contact-container .contact-me .address2 {
     display: flex;
-    padding: 0em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
     font-weight: 100;
   }
   #contact.contact .contact-container .contact-me .address2 img {
@@ -3982,7 +3988,7 @@ h4 {
   #contact.contact .contact-container .contact-me .social-links2 {
     display: flex;
     margin-bottom: 3em;
-    padding: 0em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
   }
   #contact.contact .contact-container .contact-me .social-links2 .social-icon {
     display: flex;
@@ -4018,7 +4024,7 @@ h4 {
   #contact.contact .contact-container .contact-form {
     width: 50%;
     height: auto;
-    padding: 8em 4em 5em 10%;
+    padding: 8em 4em 5em 20%;
     background-color: #16181a;
     color: #efefef;
   }
@@ -4142,12 +4148,12 @@ h4 {
     right: 20%;
   }
   footer .footer-container .legal-regulations strong {
-    color: #efefef;
+    color: #FBBF00;
     transition: color 0.3s ease;
   }
   footer .footer-container .legal-regulations strong:hover {
     cursor: pointer;
-    color: #FBBF00;
+    color: #efefef;
   }
   footer .footer-container .social-links {
     display: none;
@@ -4166,7 +4172,7 @@ h4 {
   }
   footer .footer-container .hire strong:hover {
     cursor: pointer;
-    color: #ffaa00;
+    color: #efefef;
   }
   footer.footer-fixed {
     position: fixed;
