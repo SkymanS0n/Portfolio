@@ -444,6 +444,7 @@
     
             .about-me-container {
                 @include alignCenter;
+                padding-top: 1.5em;
 
                 .image-container {
                     display: flex;
@@ -595,7 +596,8 @@
 
                 .contact-form {
                     width: 100%;
-                    padding: 5em 10% 2.5em 10%;
+                    height: auto;
+                    padding: 5em 10% 0em 10%;
                     background-color: $hdr-ftr-bg;
 
                     h3 {
@@ -607,6 +609,7 @@
                     h4 {
                         width: 100%;
                         padding-bottom: 3em;
+                        margin: 0em
                     }
     
                     form {

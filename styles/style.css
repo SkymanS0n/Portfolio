@@ -481,6 +481,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 1.5em;
   }
   .container #aboutmyself.aboutmyself .about-me-container .image-container {
     display: flex;
@@ -631,7 +632,8 @@ h4 {
   }
   .container #contact.contact .contact-container .contact-form {
     width: 100%;
-    padding: 5em 10% 2.5em 10%;
+    height: auto;
+    padding: 5em 10% 0em 10%;
     background-color: #16181a;
   }
   .container #contact.contact .contact-container .contact-form h3 {
@@ -644,6 +646,7 @@ h4 {
   .container #contact.contact .contact-container .contact-form h4 {
     width: 100%;
     padding-bottom: 3em;
+    margin: 0em;
   }
   .container #contact.contact .contact-container .contact-form form {
     display: flex;
