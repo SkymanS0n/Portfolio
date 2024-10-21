@@ -434,6 +434,19 @@ h4 {
   .container #projects.projects-section .featured-projects .carousel .project-c .doc-options a {
     display: none;
   }
+  .container #projects.projects-section .featured-projects .carousel .project-a:hover {
+    background-color: transparent;
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a img {
+    transform: scale(1);
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+    filter: blur(0px); /* Adjust the blur amount */
+  }
   .container #projects.projects-section .featured-projects .indicators {
     display: flex;
     justify-content: center;
@@ -1127,6 +1140,19 @@ h4 {
   .container #projects.projects-section .featured-projects .carousel .project-b .doc-options a,
   .container #projects.projects-section .featured-projects .carousel .project-c .doc-options a {
     display: none;
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a:hover {
+    background-color: transparent;
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a img {
+    transform: scale(1);
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+    filter: blur(0px); /* Adjust the blur amount */
   }
   .container #projects.projects-section .featured-projects .indicators {
     display: flex;
@@ -1852,6 +1878,19 @@ h4 {
   .container #projects.projects-section .featured-projects .carousel .project-b .doc-options a,
   .container #projects.projects-section .featured-projects .carousel .project-c .doc-options a {
     display: none;
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a:hover {
+    background-color: transparent;
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a img {
+    transform: scale(1);
+  }
+  .container #projects.projects-section .featured-projects .carousel .project-a img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+    filter: blur(0px); /* Adjust the blur amount */
   }
   .container #projects.projects-section .featured-projects .indicators {
     display: flex;
@@ -2629,6 +2668,19 @@ h4 {
   #projects.projects-section .featured-projects .carousel .project-c .doc-options a:hover {
     cursor: pointer;
     color: #fbc000;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a:hover {
+    background-color: transparent;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a img {
+    transform: scale(1);
+  }
+  #projects.projects-section .featured-projects .carousel .project-a img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+    filter: blur(0px); /* Adjust the blur amount */
   }
   #projects.projects-section h4:nth-of-type(2),
   #projects.projects-section h4:nth-of-type(3) {
