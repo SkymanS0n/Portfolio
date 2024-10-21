@@ -3552,6 +3552,19 @@ h4 {
     cursor: pointer;
     color: #fbc000;
   }
+  #projects.projects-section .featured-projects .carousel .project-a:hover {
+    background-color: transparent;
+  }
+  #projects.projects-section .featured-projects .carousel .project-a img {
+    transform: scale(1);
+  }
+  #projects.projects-section .featured-projects .carousel .project-a img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+    filter: blur(0px); /* Adjust the blur amount */
+  }
   #projects.projects-section h4:nth-of-type(2),
   #projects.projects-section h4:nth-of-type(3) {
     display: none;
