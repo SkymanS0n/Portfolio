@@ -253,6 +253,25 @@
                             }
                         }
                     }
+
+                    .project-a {
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+    
+                        img {
+                            transform: scale(1.0);
+                        }
+    
+                        img {
+                            max-width: 80%;
+                            height: auto;
+                            margin-bottom: 1em;
+                            transition: transform 0.3s ease;
+                            filter: blur(0px); /* Adjust the blur amount */
+                        }
+                    }
                 }
         
                 .indicators {
